@@ -1,24 +1,161 @@
 /* digibyte */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
 
-#site_debug, #content, #footer, #lightbox, #curtain, #menu, #logo, #searchbars { display: none; }
+#site_debug, #content, #footer, #lightbox, #curtain { display: none; }
 
+* {
+  margin: 0;
+  padding: 0;  
+}
+ul {
+    list-style-type: none;
+}
 body { 
     background-color: #2F2F2E;
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
+    font-size: 0.70em;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+#header {
+    display: flex;
+    flex-flow: row wrap;
 }
 #userinfo {
+    order: 1;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 #userinfo_minor,
-#userinfo_username {
+#userinfo_username,
+#userinfo_stats {
     display: flex;
 }
 
 #userinfo_minor li,
 #userinfo_username li {
     padding: 5px;
+}
+
+#userinfo_stats li {
+    padding: 5px 10px;
+}
+
+#nav_userclass { display: none; }
+
+#logo {
+    font-size: 6em;
+    order: 2;
+    text-align: center;
+    width: 100%;
+}
+
+#logo:after { 
+    content: "GODSPEED";
+}
+
+#menu {
+    display: flex;
+    font-size: 1.3em;
+    order: 3;
+    width: 100%;
+}
+
+#menu a { color: #B1B1A6; }
+
+#menu ul {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#menu li {
+    background: #ffffff;
+    display: inline-flex;
+}
+
+#menu li a {
+    background-color: #ffffff;
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px 20px 5px 40px;
+}
+
+#menu li a:hover { color: #2F2F2E; }
+
+#nav_index a, #nav_torrents a, #nav_forums a { 
+    color: #ffffff;
+    height: 50px; 
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-left: 20px !important;
+    width: 70px;
+}
+
+#menu #nav_index a { 
+    background-color: #CC333F;
+    background-image: url(Home-48.png); 
+}
+
+#menu #nav_torrents a { 
+    background-color: #00A0B0;
+    background-image: url(Download-48.png); 
+}
+
+#menu #nav_forums a { 
+    background-color: #EB6841;
+    background-image: url(Typewriter-48.png); 
+}
+
+#menu #nav_irc a { 
+    background: no-repeat 10px top url(Chat-32.png); 
+}
+
+#menu #nav_wiki a { 
+    background: no-repeat 10px top url(Message-Information-32.png); 
+}
+
+#menu #nav_donate a { 
+    background: no-repeat 10px top url(Donate-32.png);
+    color: #B1B1A6 !important; 
+}
+
+#menu #nav_donate a:hover {
+    color: #2F2F2E !important;
+}
+
+#menu #nav_upload a { 
+    background: no-repeat 10px top url(Upload-32.png);
+     
+}
+
+#menu #nav_upload { flex-grow: 1; }
+#menu #nav_uploaded { display: none; }
+
+#searchbars {
+    order: 4;
+    width: 100%;
+}
+
+#searchbars ul {
+    display: flex;
+    justify-content: center;
+    order: 4;
+    width: 100%;
+}
+
+#searchbars li {
+    padding: 2px 1px;
+}
+
+#searchbars input { 
+    border: 0;
+    font-size: 1em;
+    padding: 2px;
 }
