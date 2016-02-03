@@ -1,3 +1,8 @@
+/* digibyte */
+#header, #footer, #lightbox, #curtain { display: none; }
+
+
+
 /* We're going to opt for the category icon method for now, tags_* is also available */
 .cats_applications { width: 28px; height: 28px; background: url('images/apps.png') no-repeat center center; }
 .cats_audiobooks { width: 28px; height: 28px; background: url('images/audiobook.png') no-repeat center center; }
