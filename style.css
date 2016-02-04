@@ -12,7 +12,7 @@ ul {
     list-style-type: none;
 }
 body { 
-    background-color: #2F2F2E;
+    background-color: #d0f0ff;
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
     font-size: 0.70em;
@@ -21,7 +21,9 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
+a:hover { color: rgba(0, 160, 176, 0.92); }
 #header {
+    background-color: #2e2e2f;
     display: flex;
     flex-flow: row wrap;
 }
@@ -49,21 +51,29 @@ a {
 #nav_userclass { display: none; }
 
 #logo {
+    background: no-repeat center -330px url("logo.jpg");
+    background-size: cover;
+    opacity: 0.5;
     font-size: 6em;
+    height: 160px;
+    margin-bottom: -38px;
     order: 2;
     text-align: center;
     width: 100%;
+    z-index: 2;
 }
 
-#logo:after { 
-    content: "GODSPEED";
+#logo a { 
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
 #menu {
     display: flex;
     font-size: 1.3em;
     order: 3;
-    width: 100%;
+    z-index: 5;
 }
 
 #menu a { color: #B1B1A6; }
@@ -81,14 +91,14 @@ a {
 
 #menu li a {
     background-color: #ffffff;
+    border-bottom: 0 solid rgba(106,74,60,0.4);
     display: inline-flex;
     justify-content: center;
     padding: 5px 20px 5px 40px;
+    transition: all 100ms;
 }
 
-#menu li a:hover { color: #2F2F2E; }
-
-#nav_index a, #nav_torrents a, #nav_forums a { 
+#nav_index a, #nav_torrents a, #nav_forums a, #nav_irc a, #nav_wiki a, #nav_donate a, #nav_upload a { 
     color: #ffffff;
     height: 50px; 
     align-items: flex-end;
@@ -99,63 +109,88 @@ a {
 }
 
 #menu #nav_index a { 
-    background-color: #CC333F;
-    background-image: url(Home-48.png); 
+    background-color: rgb(204,51,63);
+    background-image: url(Home.png); 
 }
 
 #menu #nav_torrents a { 
-    background-color: #00A0B0;
-    background-image: url(Download-48.png); 
+    background-color: rgba(204,51,63,0.92);
+    background-image: url(Download.png); 
 }
 
 #menu #nav_forums a { 
-    background-color: #EB6841;
-    background-image: url(Typewriter-48.png); 
+    background-color: rgb(237, 201, 81);
+    background-image: url(Typewriter.png); 
 }
 
 #menu #nav_irc a { 
-    background: no-repeat 10px top url(Chat-32.png); 
+    background-color: rgba(237, 201, 81, 0.82);
+    background-image: url(Chat.png);
 }
 
 #menu #nav_wiki a { 
-    background: no-repeat 10px top url(Message-Information-32.png); 
+    background-color: rgb(0, 160, 176);
+    background-image: url(Message-Information.png);
 }
 
 #menu #nav_donate a { 
-    background: no-repeat 10px top url(Donate-32.png);
-    color: #B1B1A6 !important; 
-}
-
-#menu #nav_donate a:hover {
-    color: #2F2F2E !important;
+    background-color: rgba(0, 160, 176, 0.92);
+    background-image: url(Donate.png);
+    color: #ffffff !important;
 }
 
 #menu #nav_upload a { 
-    background: no-repeat 10px top url(Upload-32.png);
-     
+    background-color: rgb(235,104,65);
+    background-image: url(Upload.png);
 }
 
-#menu #nav_upload { flex-grow: 1; }
+#menu #nav_upload { flex-grow: 0; }
 #menu #nav_uploaded { display: none; }
 
+#menu li.active a,
+#menu li a:hover {
+    border-bottom-width: 5px;
+}
+
 #searchbars {
+    align-items: flex-end;
+    display: flex;
     order: 4;
-    width: 100%;
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 
 #searchbars ul {
+    background: #ffffff;
     display: flex;
-    justify-content: center;
-    order: 4;
+    justify-content: flex-end;
     width: 100%;
 }
 
 #searchbars li {
-    padding: 2px 1px;
+    background: no-repeat left -2px url(Search.png);
+    display: flex;
+    overflow: hidden;
+    padding-left: 48px;
+    width: 0;
+    transition: width 100ms;
+    transition-delay: 2s;
 }
+
+#searchbars li:hover {
+    transition-delay: 0s;
+    width: 200px;
+}
+
+#searchbars li:not(#searchbar_torrents) { display: none; }
 
 #searchbars input { 
     border: 0;
-    font-size: 1em;
+    font-size: 1.8em;
     padding: 2px;
+    width: 200px;
+}
+
+#searchbars input:focus {
+    outline: none;
 }
