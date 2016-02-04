@@ -61,6 +61,19 @@ a:hover { color: rgba(0, 160, 176, 0.92); }
     text-align: center;
     width: 100%;
     z-index: 2;
+    position: relative;
+}
+
+#logo::after {
+    content: "GS";
+    position: absolute;
+    border: 2px solid #ffffff;
+    top: 10px;
+    left: 10px;
+    font-size: 0.13em;
+    padding: 2px;
+    border-radius: 1.2em;
+    opacity: 0.5;
 }
 
 #logo a { 
