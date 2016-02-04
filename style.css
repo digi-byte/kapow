@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Material+Icons);
 
-#site_debug, #content, #footer, #lightbox, #curtain { display: none; }
+body:not(#user) #site_debug, body:not(#user) #content, body:not(#user) #footer, body:not(#user) #lightbox, body:not(#user) #curtain { display: none; }
 
 * {
   margin: 0;
