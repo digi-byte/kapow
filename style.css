@@ -289,10 +289,27 @@ span.time.tooltip {
 #user form { display: flex; }
 
 /* forums */
+#forums .forum_index {
+    width: 100%;
+}
+
+#forums .number_column {
+    text-align: left;
+}
+
+#forums tr > td > .floatLeft {
+    float: none;
+}
+
 #forums #content .header {
     color: #0295A4;
     margin: 15px;
 }
+
+#forums #content .header h2 {
+    font-weight: normal;
+}
+
 #forums #content > .thin {
     flex-flow: column;
 }
@@ -332,4 +349,5 @@ span.time.tooltip {
 .breadcrumbs {
     color: #0295A4;
     margin: 0 15px;
+    font-weight: normal;
 }
