@@ -246,6 +246,10 @@ a:hover { color: rgb(204, 51, 63); }
     display: none;
 }
 
+.brackets {
+    font-size: 0.7em;
+}
+
 span.time.tooltip {
     font-size: 0.7em;
 }
@@ -289,6 +293,18 @@ span.time.tooltip {
     background: #fafafa;
     padding: 15px;
     font-style: italic;
-    margin-top: 15px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#forums .avatar {
+    margin-right: 15px;
+    width: 150px;
+}
+
+#forums .forum_post {
+    width: 100%;
+}
+
+#forums .forum_post tbody > tr:first-child td {
+    padding-bottom: 15px;
 }
