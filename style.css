@@ -324,6 +324,7 @@ span.time.tooltip {
 }
 
 #noty_bottomRight_layout_container .noty_buttons {
+    background: none !important;
     padding: 0 !important;
     border: 0 !important;
 }
