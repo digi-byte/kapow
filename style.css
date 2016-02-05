@@ -309,7 +309,7 @@ span.time.tooltip {
     display: none;
 }
 
-.forum_index table tbody tr > td:first-child {
+.forum_index tr > td:first-child {
     display: none;
 }
 
