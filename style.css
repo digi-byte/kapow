@@ -301,11 +301,11 @@ span.time.tooltip {
     margin-top: 0;
 }
 
-#forums #content > .linkbox {
+#forums #content .linkbox {
     margin-bottom: 15px;
 }
 
-#forums #content > .linkbox .brackets {
+#forums #content .linkbox .brackets {
     font-size: 1em;
 }
 
