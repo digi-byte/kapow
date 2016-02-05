@@ -309,6 +309,14 @@ span.time.tooltip {
     display: none;
 }
 
+.forum_index table tbody tr > td:first-child {
+    display: none;
+}
+
+.forum_index h4 {
+    font-weight: normal;
+}
+
 #forums #content .header {
     color: #0295A4;
     margin: 15px;
