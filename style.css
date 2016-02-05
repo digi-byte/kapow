@@ -250,7 +250,7 @@ a:hover { color: rgb(204, 51, 63); }
     display: none;
 }
 
-.brackets {
+#content .brackets {
     font-size: 0.7em;
 }
 
