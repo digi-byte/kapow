@@ -343,6 +343,11 @@ span.time.tooltip {
     color: #ffffff !important;
 }
 
+/* inbox */
+#inbox #content > .thin {
+    flex-direction: column;
+}
+
 /* user settings */
 #user form { display: flex; }
 
