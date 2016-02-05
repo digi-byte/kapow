@@ -293,6 +293,54 @@ span.time.tooltip {
     color: rgb(0, 160, 176);
 }
 
+/* notifications */
+#noty_bottomRight_layout_container {
+    bottom: 0;
+    right: 0;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+#noty_bottomRight_layout_container > li {
+    border: 0;
+    margin-top: 0;
+    box-shadow: none;
+    color: #ffffff;
+    width: auto;
+    background: rgb(237, 201, 81);
+    padding: 15px;
+}
+
+#noty_bottomRight_layout_container .noty_bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#noty_bottomRight_layout_container .noty_message {
+    font-size: 1em;
+    line-height: normal;
+    padding: 0;
+}
+
+#noty_bottomRight_layout_container .noty_buttons {
+    padding: 0;
+    border: 0;
+}
+
+#noty_bottomRight_layout_container .brackets:before {
+    content: "";
+}
+
+#noty_bottomRight_layout_container .brackets:after {
+    content: "";
+}
+
+#noty_bottomRight_layout_container .brackets {
+    margin: 0 15px;
+    color: #ffffff;
+}
+
 /* user settings */
 #user form { display: flex; }
 
