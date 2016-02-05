@@ -27,13 +27,13 @@ a:hover { color: rgb(204, 51, 63); }
     flex-flow: row wrap;
 }
 #header a { color: #ffffff; }
-#header a:hover { color: rgba(0, 160, 176, 0.92); }
 #userinfo {
     order: 1;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
+#userinfo a:hover { color: rgba(0, 160, 176, 0.92); }
 #userinfo_minor,
 #userinfo_username,
 #userinfo_stats {
