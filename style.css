@@ -126,12 +126,12 @@ a:hover { color: rgb(204, 51, 63); }
 }
 
 #menu #nav_index a { 
-    background-color: rgb(204,51,63);
+    background-color: rgb(204, 51, 63);
     background-image: url(Home.png); 
 }
 
 #menu #nav_torrents a { 
-    background-color: rgba(204,51,63,0.92);
+    background-color: rgba(204, 51, 63, 0.92);
     background-image: url(Download.png); 
 }
 
@@ -157,12 +157,12 @@ a:hover { color: rgb(204, 51, 63); }
 }
 
 #menu #nav_upload a { 
-    background-color: rgb(235,104,65);
+    background-color: rgb(235, 104, 65);
     background-image: url(Upload.png);
 }
 
 #menu #nav_uploaded a { 
-    background-color: rgb(235,104,65, 0.92);
+    background-color: rgba(235, 104, 65, 0.92);
     background-image: url(Upload.png);
 }
 
