@@ -289,8 +289,24 @@ span.time.tooltip {
 #user form { display: flex; }
 
 /* forums */
+#forums #content .header {
+    color: #0295A4;
+    margin: 15px;
+}
 #forums #content > .thin {
     flex-flow: column;
+}
+
+#forums #content > .thin > .boxOuter {
+    margin-top: 0;
+}
+
+#forums #content > .linkbox {
+    margin-bottom: 15px;
+}
+
+#forums #content > .linkbox .brackets {
+    font-size: 1em;
 }
 
 #forums blockquote {
@@ -311,4 +327,9 @@ span.time.tooltip {
 
 #forums .forum_post tbody > tr:first-child td {
     padding-bottom: 15px;
+}
+
+.breadcrumbs {
+    color: #0295A4;
+    margin: 0 15px;
 }
