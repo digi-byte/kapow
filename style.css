@@ -277,18 +277,22 @@ span.time.tooltip {
     color: rgb(0, 160, 176);
 }
 
-.forum_list tbody > tr:first-child > td {
-    padding-top: 0;
-}
-.forum_list tbody > tr > td {
-    padding-top: 15px;
-}
-
-
 /* user settings */
 #user form { display: flex; }
 
 /* forums */
+.forum_list tbody > tr:first-child > td {
+    padding-top: 0;
+}
+
+.forum_list tbody > tr > td {
+    padding-top: 15px;
+}
+
+#forums .forum_list .colhead {
+    font-size: 1.3em;
+}
+
 #forums .forum_index {
     width: 100%;
 }
@@ -297,7 +301,7 @@ span.time.tooltip {
     text-align: left;
 }
 
-#forums tr > td > .floatLeft {
+#forums .forum_index tr > td > .floatLeft {
     float: none;
 }
 
