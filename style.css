@@ -25,6 +25,7 @@ a:hover { color: rgb(204, 51, 63); }
     background-color: #2e2e2f;
     display: flex;
     flex-flow: row wrap;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 #header a { color: #ffffff; }
 #userinfo {
@@ -230,9 +231,11 @@ a:hover { color: rgb(204, 51, 63); }
     color: #ababab;
     font-size: 1.3em;
     padding: 15px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
-.head strong {
+.head strong,
+.forum_list .colhead {
     color: #7a7a7a;
     font-size: 1.8em;
     font-weight: 400;
@@ -263,4 +266,11 @@ span.time.tooltip {
     text-align: center;
     margin-bottom: 15px;
     color: rgb(0, 160, 176);
+}
+
+.forum_list tbody > tr:first-child > td {
+    padding-top: 0;
+}
+.forum_list tbody > tr > td {
+    padding-top: 15px;
 }
