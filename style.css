@@ -266,6 +266,14 @@ span.time.tooltip {
     display: none;
 }
 
+.sidebar .poll {
+    margin-top: 15px;
+}
+
+.sidebar .pad > p > strong {
+    font-weight: normal;
+}
+
 .center_poll {
     display: block;
     height: 1em;
