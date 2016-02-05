@@ -295,50 +295,50 @@ span.time.tooltip {
 
 /* notifications */
 #noty_bottomRight_layout_container {
-    bottom: 0;
-    right: 0;
-    font-size: 1.5em;
-    width: 100%;
+    bottom: 0 !important;
+    right: 0 !important;
+    font-size: 1.5em !important;
+    width: 100% !important;
 }
 
 #noty_bottomRight_layout_container > li {
-    border: 0;
-    margin-top: 0;
-    box-shadow: none;
-    color: #ffffff;
-    width: auto;
-    background: rgb(237, 201, 81);
-    padding: 15px;
+    border: 0 !important;
+    margin-top: 0 !important;
+    box-shadow: none !important;
+    color: #ffffff !important;
+    width: auto !important;
+    background: rgb(237, 201, 81) !important;
+    padding: 15px !important;
 }
 
 #noty_bottomRight_layout_container .noty_bar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 100% !important;
 }
 
 #noty_bottomRight_layout_container .noty_message {
-    font-size: 1em;
-    line-height: normal;
-    padding: 0;
+    font-size: 1em !important;
+    line-height: normal !important;
+    padding: 0 !important;
 }
 
 #noty_bottomRight_layout_container .noty_buttons {
-    padding: 0;
-    border: 0;
+    padding: 0 !important;
+    border: 0 !important;
 }
 
 #noty_bottomRight_layout_container .brackets:before {
-    content: "";
+    content: "" !important;
 }
 
 #noty_bottomRight_layout_container .brackets:after {
-    content: "";
+    content: "" !important;
 }
 
 #noty_bottomRight_layout_container .brackets {
-    margin: 0 15px;
-    color: #ffffff;
+    margin: 0 15px !important;
+    color: #ffffff !important;
 }
 
 /* user settings */
