@@ -284,3 +284,9 @@ span.time.tooltip {
 #forums #content > .thin {
     flex-flow: column;
 }
+
+#forums blockquote {
+    background: #fafafa;
+    padding: 15px;
+    font-style: italic;
+}
