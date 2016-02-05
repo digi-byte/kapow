@@ -279,3 +279,8 @@ span.time.tooltip {
 
 /* user settings */
 #user form { display: flex; }
+
+/* forums */
+#forums #content > .thin {
+    flex-flow: column;
+}
