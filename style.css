@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300,300italic,800,800italic);
 
 #site_debug, body:not(#user) #lightbox, body:not(#user) #curtain { display: none; }
+#settings_sections { position: initial; }
 
 * {
   margin: 0;
@@ -274,3 +275,7 @@ span.time.tooltip {
 .forum_list tbody > tr > td {
     padding-top: 15px;
 }
+
+
+/* user settings */
+#user form { display: flex; }
