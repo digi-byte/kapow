@@ -305,6 +305,10 @@ span.time.tooltip {
     float: none;
 }
 
+.forum_index td > p {
+    display: none;
+}
+
 #forums #content .header {
     color: #0295A4;
     margin: 15px;
