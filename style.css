@@ -303,6 +303,7 @@ span.time.tooltip {
 
 #noty_bottomRight_layout_container > li {
     border: 0 !important;
+    border-radius: 0 !important;
     margin-top: 0 !important;
     box-shadow: none !important;
     color: #ffffff !important;
