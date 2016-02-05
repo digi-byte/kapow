@@ -289,4 +289,6 @@ span.time.tooltip {
     background: #fafafa;
     padding: 15px;
     font-style: italic;
+    margin-top: 15px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
