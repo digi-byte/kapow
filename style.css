@@ -258,11 +258,19 @@ span.time.tooltip {
     font-size: 0.7em;
 }
 
+.graph {
+    margin: 15px 0;
+}
+
+.graph br {
+    display: none;
+}
+
 .center_poll {
     display: block;
     height: 1em;
     background: #EB6841;
-    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
 #footer > * {
