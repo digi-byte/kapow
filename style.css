@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Material+Icons);
 
-body:not(#user) #site_debug, body:not(#user) #content, body:not(#user) #footer, body:not(#user) #lightbox, body:not(#user) #curtain { display: none; }
+#site_debug, body:not(#user) #content, body:not(#index) #content, body:not(#user) #lightbox, body:not(#user) #curtain { display: none; }
 
 * {
   margin: 0;
@@ -18,15 +18,17 @@ body {
     font-size: 0.70em;
 }
 a {
-    color: #ffffff;
+    color: #0295A4;
     text-decoration: none;
 }
-a:hover { color: rgba(0, 160, 176, 0.92); }
+a:hover { color: rgb(204, 51, 63); }
 #header {
     background-color: #2e2e2f;
     display: flex;
     flex-flow: row wrap;
 }
+#header a { color: #ffffff; }
+#header a:hover { color: rgba(0, 160, 176, 0.92); }
 #userinfo {
     order: 1;
     display: flex;
@@ -207,4 +209,59 @@ a:hover { color: rgba(0, 160, 176, 0.92); }
 
 #searchbars input:focus {
     outline: none;
+}
+
+#content > .thin {
+    display: flex;
+}
+
+.sidebar {
+    order: 2;
+}
+
+.main_column {
+    order: 1;
+    margin-right: -15px;
+    flex-grow: 1;
+}
+
+.boxOuter {
+    background: #ffffff;
+    margin: 15px;
+    color: #ababab;
+    font-size: 1.3em;
+    padding: 15px;
+}
+
+.head strong {
+    color: #7a7a7a;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.head .brackets {
+    display: none;
+}
+
+span.time.tooltip {
+    font-size: 0.7em;
+}
+
+.center_poll {
+    display: block;
+    height: 1em;
+    background: #EB6841;
+    border-radius: 5px;
+}
+
+#footer > * {
+    display: none;
+}
+
+#footer > p:nth-of-type(1) {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(0, 160, 176);
 }
