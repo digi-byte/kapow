@@ -59,7 +59,7 @@ a:hover { color: rgb(204, 51, 63); }
 #nav_userclass { display: none; }
 
 #logo {
-    background: no-repeat center -330px url("logo.jpg");
+    background: no-repeat center top url("logo.jpg");
     background-size: cover;
     opacity: 0.5;
     font-size: 6em;
@@ -300,6 +300,11 @@ span.time.tooltip {
     color: rgb(0, 160, 176);
 }
 
+/* index */
+#index .sidebar .forum_list td {
+    padding-top: 15px;
+}
+
 /* notifications */
 #noty_bottomRight_layout_container {
     bottom: 0 !important;
@@ -405,6 +410,14 @@ span.time.tooltip {
 }
 
 .forum_index h4 {
+    font-weight: normal;
+}
+
+#forums .forum_index td.unread ~ td a {
+    font-weight: bold;
+}
+
+#forums #content .forum_index span.last_poster a {
     font-weight: normal;
 }
 
@@ -548,6 +561,36 @@ span.time.tooltip {
     float: right;
 }
 
+#quickpostform .preview_submit > input[type=checkbox] {
+    display: none;
+}
+
+#quickpostform .preview_submit > input[type=checkbox] + label {
+    font-size: 1.3em;
+    padding-left: 25px;
+    position: relative;
+}
+
+#quickpostform .preview_submit > input[type=checkbox] + label:before {
+    background: white;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    height: 19px;
+    width: 20px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#quickpostform .preview_submit > input[type=checkbox]:checked + label:after {
+    content: "\2713";
+    font-size: 1em;
+    color: rgb(204, 51, 63);
+    position: absolute;
+    left: 5px;
+    top: -1px;
+}
+
 #preview_wrap_0 {
     margin: 0 0 27px;
     border-spacing: 0;
@@ -578,37 +621,6 @@ span.time.tooltip {
 }
 
 /* form elements */
-
-input[type=checkbox] {
-    display: none;
-}
-
-input[type=checkbox] + label {
-    font-size: 1.3em;
-    padding-left: 25px;
-    position: relative;
-}
-
-input[type=checkbox] + label:before {
-    background: white;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    height: 19px;
-    width: 20px;
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-input[type=checkbox]:checked + label:after {
-    content: "\2713";
-    font-size: 1em;
-    color: rgb(204, 51, 63);
-    position: absolute;
-    left: 5px;
-    top: -1px;
-}
-
 input[type=button],
 input[type=submit] {
     color: #ffffff;
