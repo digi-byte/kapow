@@ -8,6 +8,11 @@
   margin: 0;
   padding: 0;  
 }
+
+:focus {
+    outline: none;
+}
+
 ul {
     list-style-type: none;
 }
@@ -163,12 +168,14 @@ a:hover { color: rgb(204, 51, 63); }
 
 #menu #nav_uploaded a { 
     background-color: rgba(235, 104, 65, 0.92);
-    background-image: url(Upload.png);
+    background-image: url(Uploads.png);
 }
 
 #menu #nav_uploaded { flex-grow: 0; }
 
 #menu li.active a,
+#donate #nav_donate a,
+#upload #nav_upload a,
 #menu li a:hover {
     border-bottom-width: 5px;
 }
@@ -240,7 +247,7 @@ a:hover { color: rgb(204, 51, 63); }
 }
 
 .head strong,
-.forum_list .colhead {
+.colhead {
     color: #7a7a7a;
     font-size: 1.8em;
     font-weight: 400;
@@ -351,16 +358,17 @@ span.time.tooltip {
 /* user settings */
 #user form { display: flex; }
 
+/* tooltip */
+.tooltipster-base {
+    display: none !important;
+}
+
 /* forums */
-.forum_list tbody > tr:first-child > td {
-    padding-top: 0;
+.forum_list {
+    margin-top: -15px;
 }
 
-.forum_list tbody > tr > td {
-    padding-top: 15px;
-}
-
-#forums .forum_list .colhead {
+.colhead {
     font-size: 1.3em;
 }
 
@@ -374,6 +382,18 @@ span.time.tooltip {
 
 #forums .forum_index tr > td > .floatLeft {
     float: none;
+}
+
+.forum_index tbody > tr:first-child > td {
+    padding-top: 0;
+}
+
+.forum_index tbody .last_topic strong {
+    font-weight: normal;
+}
+
+.forum_index tbody > tr > td {
+    padding-top: 15px;
 }
 
 .forum_index td > p {
@@ -407,6 +427,7 @@ span.time.tooltip {
 
 #forums #content .linkbox {
     margin-bottom: 15px;
+    text-align: center;
 }
 
 #forums #content .linkbox .brackets {
@@ -437,4 +458,171 @@ span.time.tooltip {
     color: #0295A4;
     margin: 0 15px;
     font-weight: normal;
+    order: 1;
+}
+
+.textboxTags {
+    margin: 0 15px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.textboxTags ~ br {
+    display: none;
+}
+
+.textboxButton:first-child {
+    margin-left: 0;
+}
+
+.textboxButton {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3em;
+    flex-grow: 1;
+    margin-left: 15px;
+    padding: 5px;
+    background: rgb(0, 160, 176);
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.textboxButton:hover {
+    background: rgba(0, 160, 176, 0.92);
+}
+
+#textarea_wrap_0 {
+    display: flex;
+    margin: 0 15px 15px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    order: 2;
+}
+
+#textarea_wrap_0 .textboxField {
+    border: 0;
+    padding: 15px;
+    flex-grow: 1;
+    height: 100px;
+}
+
+#preview_wrap_0 ~ br {
+    display: none;
+}
+
+#quickpostform {
+    margin-top: -25px;
+}
+
+#quickpostform .textboxContainer > div {
+    flex-direction: column;
+    display: flex;
+}
+
+#quickpostform .textboxContainer ~ br {
+    display: none;
+}
+
+#quickpostform .textboxSmileys {
+    order: 1;
+    margin-bottom: 15px;
+}
+
+#quickpostform .textboxSmileys > * {
+    cursor: pointer;
+}
+
+#quickpostform .preview_submit {
+    overflow: hidden;
+    margin: 0 15px 45px;
+    position: relative;
+}
+
+#quickpostform .preview_submit > * {
+    float: left;
+}
+
+#quickpostform .preview_submit > label {
+    color: rgb(0, 160, 176);
+}
+
+#quickpostform .preview_submit > input:not([type=checkbox]) {
+    float: right;
+}
+
+#preview_wrap_0 {
+    margin: 0 0 27px;
+    border-spacing: 0;
+    position: relative;
+}
+
+#preview_wrap_0:before {
+    content: "Preview";
+    font-size: 1.5em;
+    color: rgb(0, 160, 176);
+    position: absolute;
+    top: -20px;
+    left: 15px;
+}
+
+#preview_wrap_0 .colhead_dark,
+#preview_wrap_0 .avatar {
+    display: none;
+}
+
+#preview_0 {
+    background: #ffffff;
+    margin: 15px;
+    color: #ababab;
+    font-size: 1.3em;
+    padding: 15px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+/* form elements */
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label {
+    font-size: 1.3em;
+    padding-left: 25px;
+    position: relative;
+}
+
+input[type=checkbox] + label:before {
+    background: white;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    height: 19px;
+    width: 20px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+input[type=checkbox]:checked + label:after {
+    content: "\2713";
+    font-size: 1em;
+    color: rgb(204, 51, 63);
+    position: absolute;
+    left: 5px;
+    top: -1px;
+}
+
+input[type=button],
+input[type=submit] {
+    color: #ffffff;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    background: rgb(204, 51, 63);
+    border: 0;
+    font-size: 1.3em;
+    padding: 5px 15px;
+    margin-left: 15px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover {
+    background: rgba(204, 51, 63, 0.92);
 }
