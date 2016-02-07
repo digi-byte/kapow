@@ -14,7 +14,14 @@
 }
 
 ul {
+    margin-left: 15px;
+}
+
+#user ul,
+.sidebar ul.poll,
+#header ul {
     list-style-type: none;
+    margin-left: 0;
 }
 body { 
     background-color: #d0f0ff;
@@ -314,6 +321,7 @@ select {
 
 #content > .thin {
     display: flex;
+    flex-direction: column;
 }
 
 .sidebar {
@@ -394,6 +402,10 @@ span.time.tooltip {
     padding-top: 15px;
 }
 
+#index #content > .thin {
+    flex-direction: row;
+}
+
 /* notifications */
 #noty_bottomRight_layout_container {
     bottom: 0 !important;
@@ -445,11 +457,12 @@ span.time.tooltip {
 }
 
 /* inbox */
-#inbox #content > .thin {
-    flex-direction: column;
-}
+
 
 /* user settings */
+#user #content > .thin {
+    flex-direction: row;
+}
 #user .main_column { 
     margin-right: 0;
     flex-grow: 2;
@@ -771,3 +784,34 @@ span.time.tooltip {
     padding: 15px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
+
+/* donate */
+#donate #content > .thin {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#donate #content .donation_info_title {
+    width: 100%;
+}
+
+#donate #content .donateOption {
+    flex: 1;
+}
+
+#donate #content .donateOption .box {
+    padding-top: 0;
+    height: auto;
+}
+
+#donate #content .boxOuter:last-child {
+    flex: 1;
+}
+
+#donate .donation_info {
+    padding: 0;
+    margin: 0;
+} 
+
+/* torrents */
+
