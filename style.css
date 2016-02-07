@@ -19,7 +19,8 @@ ul {
 
 #user ul,
 .sidebar ul.poll,
-#header ul {
+#header ul,
+.avatar ul {
     list-style-type: none;
     margin-left: 0;
 }
