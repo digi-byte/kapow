@@ -27,6 +27,95 @@ a {
     text-decoration: none;
 }
 a:hover { color: rgb(204, 51, 63); }
+
+/* form elements */
+input[type=button],
+input[type=submit] {
+    color: #ffffff;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    background: rgb(204, 51, 63);
+    border: 0;
+    font-size: 1.3em;
+    padding: 5px 15px;
+    margin-right: 15px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+input[type=button]:last-child,
+input[type=submit]:last-child {
+    margin-right: 0;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover {
+    background: rgba(204, 51, 63, 0.92);
+}
+
+input[type=checkbox]{
+    position: relative;
+}
+
+input[type=checkbox]::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(204, 51, 63);
+    color: #ffffff;
+    line-height: 1em;
+    top: 0;
+    text-align: center;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+input[type=checkbox]:checked::after{
+    content: "\2713";
+}
+
+input[type=radio]{
+    position: relative;
+}
+
+input[type=radio]::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(204, 51, 63);
+    color: #ffffff;
+    line-height: 1em;
+    top: 0;
+    padding-top: 1px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+input[type=radio]:checked::after{
+    content: "·";
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+textarea,
+select {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    width: 100%;
+    border: 0;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    background-color: #fcfcfc;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+select {
+    
+}
+
 #header {
     background-color: #2e2e2f;
     display: flex;
@@ -214,7 +303,7 @@ a:hover { color: rgb(204, 51, 63); }
 
 #searchbars input { 
     border: 0;
-    font-size: 1.8em;
+    font-size: 1.5em;
     padding: 2px;
     width: 200px;
 }
@@ -361,7 +450,66 @@ span.time.tooltip {
 }
 
 /* user settings */
+#user .main_column { 
+    margin-right: 0;
+    flex-grow: 2;
+    margin-right: 345px;
+}
+#user #settings_sections {
+    position: fixed;
+    right: 0;
+    width: 300px;
+}
+#user #settings_sections.fixed {
+    
+}
+
+#user #settings_sections strong {
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+#user #settings_sections h2 {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+#user #settings_sections li {
+    padding-top: 15px;
+}
+
+#user #settings_sections li[data-gazelle-section-id="live_search"] {
+    display: none;
+}
+
 #user form { display: flex; }
+#user .user_options {
+    border-spacing: 0;
+}
+
+#user .user_options tbody tr:first-child strong {
+    font-size: 1.3em;
+    font-weight: normal;
+}
+#user .user_options td.label strong {
+    font-weight: normal;
+}
+#user .user_options tr:not(:first-child):hover {
+    background: #f9f9f9;
+}
+#user .user_options td {
+    width: 70%;
+    padding: 7px 0 8px;
+}
+#user .user_options td:first-child {
+    width: 30%;
+}
+#user .user_options .textboxButton {
+    font-size: 1em;
+}
+#user .user_options textarea {
+    background-color: #fcfcfc;
+}
 
 /* tooltip */
 .tooltipster-base {
@@ -400,7 +548,6 @@ span.time.tooltip {
 .forum_index tbody > tr > td {
     padding-top: 15px;
 }
-
 .forum_index td > p {
     display: none;
 }
@@ -421,12 +568,12 @@ span.time.tooltip {
     font-weight: normal;
 }
 
-#forums #content .header {
+#content .header {
     color: #0295A4;
     margin: 15px;
 }
 
-#forums #content .header h2 {
+#content .header h2 {
     font-weight: normal;
 }
 
@@ -475,9 +622,13 @@ span.time.tooltip {
 }
 
 .textboxTags {
-    margin: 0 15px 15px;
+    margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
+}
+
+#quickpostform .textboxTags {
+    margin: 0 15px 15px;
 }
 
 .textboxTags ~ br {
@@ -489,12 +640,14 @@ span.time.tooltip {
 }
 
 .textboxButton {
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
     font-size: 1.3em;
     flex-grow: 1;
     margin-left: 15px;
     padding: 5px;
+    text-align: center;
     background: rgb(0, 160, 176);
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -505,9 +658,13 @@ span.time.tooltip {
 
 #textarea_wrap_0 {
     display: flex;
-    margin: 0 15px 15px;
+    margin-bottom: 15px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     order: 2;
+}
+
+#quickpostform #textarea_wrap_0 {
+    margin: 0 15px 15px;
 }
 
 #textarea_wrap_0 .textboxField {
@@ -525,16 +682,20 @@ span.time.tooltip {
     margin-top: -25px;
 }
 
-#quickpostform .textboxContainer > div {
+.textboxContainer > div {
     flex-direction: column;
     display: flex;
+}
+
+#quickpostform textarea {
+    font-size: 1.3em;
 }
 
 #quickpostform .textboxContainer ~ br {
     display: none;
 }
 
-#quickpostform .textboxSmileys {
+.textboxSmileys {
     order: 1;
     margin-bottom: 15px;
 }
@@ -547,18 +708,7 @@ span.time.tooltip {
     overflow: hidden;
     margin: 0 15px 45px;
     position: relative;
-}
-
-#quickpostform .preview_submit > * {
-    float: left;
-}
-
-#quickpostform .preview_submit > label {
-    color: rgb(0, 160, 176);
-}
-
-#quickpostform .preview_submit > input:not([type=checkbox]) {
-    float: right;
+    text-align: right;
 }
 
 #quickpostform .preview_submit > input[type=checkbox] {
@@ -569,6 +719,8 @@ span.time.tooltip {
     font-size: 1.3em;
     padding-left: 25px;
     position: relative;
+    color: rgb(0, 160, 176);
+    margin-right: 15px;
 }
 
 #quickpostform .preview_submit > input[type=checkbox] + label:before {
@@ -618,23 +770,4 @@ span.time.tooltip {
     font-size: 1.3em;
     padding: 15px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-}
-
-/* form elements */
-input[type=button],
-input[type=submit] {
-    color: #ffffff;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-    background: rgb(204, 51, 63);
-    border: 0;
-    font-size: 1.3em;
-    padding: 5px 15px;
-    margin-left: 15px;
-    margin-bottom: 1px;
-    cursor: pointer;
-}
-
-input[type=button]:hover,
-input[type=submit]:hover {
-    background: rgba(204, 51, 63, 0.92);
 }
