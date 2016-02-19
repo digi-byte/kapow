@@ -110,6 +110,7 @@ input[type=radio]:checked::after{
 input[type=text],
 input[type=number],
 input[type=password],
+input[type=search],
 input[type=email],
 textarea,
 select {
@@ -808,6 +809,36 @@ span.time.tooltip {
     font-size: 1.3em;
     padding: 15px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#forums .linkbox strong {
+    color: rgba(106,74,60,0.4);
+}
+
+#forums .linkbox a strong {
+    color: rgb(0, 160, 176);
+}
+
+#forums #content .breadcrumbs + .linkbox {
+    margin-bottom: 30px;
+}
+
+#forums .header + .linkbox > .center {
+    margin-bottom: 15px;
+}
+
+#searchthread h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    color: rgb(0, 160, 176);
+}
+
+#searchthread strong {
+    font-weight: normal;
+}
+
+#searchthread td {
+    padding: 3px;
 }
 
 /* donate */
