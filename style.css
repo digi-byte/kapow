@@ -36,8 +36,6 @@ a {
 }
 a:hover { color: rgb(204, 51, 63); }
 
-.floatRight { float: right; }
-
 /* form elements */
 input[type=button],
 input[type=submit] {
@@ -479,9 +477,6 @@ span.time.tooltip {
     right: 0;
     width: 300px;
 }
-#user #settings_sections.fixed {
-    
-}
 
 #user #settings_sections strong {
     font-size: 1.3em;
@@ -528,6 +523,13 @@ span.time.tooltip {
 }
 #user .user_options textarea {
     background-color: #fcfcfc;
+}
+
+#user .preview_wrap {
+    background: #fcfcfc;
+    margin: 0;
+    font-size: 1em;
+    margin-bottom: 15px;
 }
 
 /* tooltip */
@@ -782,13 +784,13 @@ span.time.tooltip {
     top: -1px;
 }
 
-#preview_wrap_0 {
+#forums #preview_wrap_0 {
     margin: 0 0 27px;
     border-spacing: 0;
     position: relative;
 }
 
-#preview_wrap_0:before {
+#forums #preview_wrap_0:before {
     content: "Preview";
     font-size: 1.5em;
     color: rgb(0, 160, 176);
@@ -797,12 +799,12 @@ span.time.tooltip {
     left: 15px;
 }
 
-#preview_wrap_0 .colhead_dark,
-#preview_wrap_0 .avatar {
+#forums #preview_wrap_0 .colhead_dark,
+#forums #preview_wrap_0 .avatar {
     display: none;
 }
 
-#preview_0 {
+#forums #preview_0 {
     background: #ffffff;
     margin: 15px;
     color: #ababab;
@@ -839,6 +841,10 @@ span.time.tooltip {
 
 #searchthread td {
     padding: 3px;
+}
+
+#forums .forum_index td.unread ~ td a {
+    font-weight: normal;
 }
 
 /* donate */
