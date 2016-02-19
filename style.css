@@ -36,6 +36,8 @@ a {
 }
 a:hover { color: rgb(204, 51, 63); }
 
+.floatRight { float: right; }
+
 /* form elements */
 input[type=button],
 input[type=submit] {
@@ -623,11 +625,31 @@ span.time.tooltip {
 }
 
 #forums .forum_post {
+    position: relative;
     width: 100%;
 }
 
 #forums .forum_post tbody > tr:first-child td {
     padding-bottom: 15px;
+}
+
+#forums .forum_post:not(.preview_wrap) .textboxButton,
+#forums .forum_post:not(.preview_wrap) .floatRight input {
+    font-size: 1em;    
+}
+
+#forums .forum_post:not(.preview_wrap) .floatRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#forums .forum_post:not(.preview_wrap) form {
+    margin-bottom: 30px
+}
+
+#forums .forum_post:not(.preview_wrap) form .textboxSmileys {
+    text-align: center;
 }
 
 .breadcrumbs {
