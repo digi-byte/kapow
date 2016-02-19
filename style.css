@@ -793,6 +793,10 @@ span.time.tooltip {
 }
 
 #donate #content .donation_info_title {
+    color: #0295A4;
+    margin: 15px 15px 0;
+    font-weight: normal;
+    font-size: 1.5em;
     width: 100%;
 }
 
