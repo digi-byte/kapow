@@ -271,6 +271,13 @@ select {
     background-image: url(Uploads.png);
 }
 
+#menu #nav_requests { order: 7; }
+
+#menu #nav_requests a { 
+    background-color: rgb(116, 176, 0);
+    background-image: url(Request.png);
+}
+
 #menu #nav_uploaded { flex-grow: 0; }
 
 #menu li.active a,
