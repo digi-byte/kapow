@@ -989,7 +989,8 @@ span.time.tooltip {
     width: 200px;
 }
 
-#upload .create_form .textboxButton {
+#upload .create_form .textboxButton,
+#upload .create_form input[type=submit] {
     font-size: 1em;
 }
 
