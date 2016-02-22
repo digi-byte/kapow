@@ -502,6 +502,10 @@ span.time.tooltip {
     font-size: 1em;
 }
 
+#user .sidebar .time.tooltip {
+    font-size: 1em;
+}
+
 /* user settings */
 #user .edit_form .main_column { 
     margin-right: 0;
