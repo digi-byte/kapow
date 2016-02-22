@@ -36,6 +36,16 @@ a {
 }
 a:hover { color: rgb(204, 51, 63); }
 
+.textboxSmileys {
+    text-align: center;
+    order: 1;
+    margin-bottom: 15px;
+}
+
+.textboxSmileys > * {
+    cursor: pointer;
+}
+
 /* form elements */
 input[type=button],
 input[type=submit] {
@@ -337,12 +347,14 @@ select {
 
 .sidebar {
     order: 2;
+    max-width: 20%;
 }
 
 .main_column {
     order: 1;
     margin-right: -15px;
     flex-grow: 1;
+    max-width: 80%;
 }
 
 .boxOuter {
@@ -660,10 +672,6 @@ span.time.tooltip {
     margin-bottom: 30px
 }
 
-#forums .forum_post:not(.preview_wrap) form .textboxSmileys {
-    text-align: center;
-}
-
 .breadcrumbs {
     color: #0295A4;
     margin: 0 15px;
@@ -743,15 +751,6 @@ span.time.tooltip {
 
 #quickpostform .textboxContainer ~ br {
     display: none;
-}
-
-.textboxSmileys {
-    order: 1;
-    margin-bottom: 15px;
-}
-
-#quickpostform .textboxSmileys > * {
-    cursor: pointer;
 }
 
 #quickpostform .preview_submit {
@@ -896,4 +895,112 @@ span.time.tooltip {
 
 #chat #content .box.pad strong {
    font-weight: normal;
+}
+
+/* wiki */
+#wiki #content > .thin {
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#wiki .header {
+    flex-grow: 200;
+    width: 100%;
+}
+
+#wiki .header .linkbox {
+    font-size: 1.43em;
+    text-align: center;
+}
+
+#wiki .main_column .wiki_article h3,
+#wiki .main_column .wiki_article h4,
+#wiki .main_column .wiki_article h5,
+#wiki .main_column .wiki_article h6 {
+    font-weight: normal;
+}
+
+#wiki .main_column .wiki_article .pad > div {
+    text-align: left !important;
+}
+
+#wiki .sidebar > .boxOuter .head {
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    color: #7a7a7a;
+}
+
+#wiki .sidebar > .boxOuter .box_info strong {
+    color: #7a7a7a;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+#wiki .sidebar > .boxOuter .box_info ul {
+    list-style: none;
+    margin: 0;
+}
+
+#wiki .sidebar > .boxOuter .box_info > ul > li {
+    margin-top: 15px;
+}
+
+#wiki .sidebar > .boxOuter .box_info > ul > li:first-child {
+    margin-top: 0px;
+}
+
+#wiki .sidebar span.time.tooltip {
+    font-size: 1em;
+}
+
+/* upload */
+#upload #content .thin {
+    padding: 15px;
+}
+
+#upload #content .thin > p:first-child {
+    font-size: 1.5em;
+    color: rgb(0, 160, 176);
+}
+
+#upload #content .thin > p:first-child input {
+    margin-top: 15px;
+    font-size: 0.7em;
+    max-width: 500px;
+    text-align: center;
+}
+
+#upload .create_form {
+    background: #ffffff;
+    margin: 15px 0;
+    color: #ababab;
+    font-size: 1.3em;
+    padding: 15px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+#upload .create_form tr:hover {
+    background: #f9f9f9;
+}
+#upload .create_form tr > td {
+    padding: 7px 0 8px;
+}
+
+#upload .create_form tr > td:first-child {
+    width: 200px;
+}
+
+#upload .create_form .textboxButton {
+    font-size: 1em;
+}
+
+#upload .create_form input[type=submit] {
+    margin-top: 15px;
+}
+
+#upload .create_form table.slice tr:hover {
+    background: none;
+}
+
+#upload .create_form .important_text {
+    color: inherit;
 }
