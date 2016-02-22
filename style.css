@@ -347,14 +347,14 @@ select {
 
 .sidebar {
     order: 2;
-    max-width: 20%;
+    width: 20%;
 }
 
 .main_column {
     order: 1;
     margin-right: -15px;
     flex-grow: 1;
-    max-width: 80%;
+    width: 80%;
 }
 
 .boxOuter {
@@ -479,20 +479,40 @@ span.time.tooltip {
     color: #ffffff !important;
 }
 
-/* inbox */
-
-
-/* user settings */
+/* user */
 #user #content > .thin {
     flex-direction: row;
+    flex-wrap: wrap;
 }
-#user .main_column { 
+
+#user #content > .thin > .header,
+#user #content > .thin > .linkbox {
+    width: 100%;
+}
+
+#user #content > .thin > .header strong {
+    font-weight: normal;
+}
+
+#user #content > .thin > .linkbox {
+    text-align: center;
+}
+
+#user #content > .thin > .linkbox .brackets {
+    font-size: 1em;
+}
+
+/* user settings */
+#user .edit_form .main_column { 
     margin-right: 0;
     flex-grow: 2;
     margin-right: 345px;
-    max-width: none;
+    width: auto;
 }
-#user #settings_sections {
+#user .edit_form .sidebar {
+    width: auto;
+}
+#user .edit_form  #settings_sections {
     position: fixed;
     right: 0;
     width: 300px;
