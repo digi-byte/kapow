@@ -1057,3 +1057,62 @@ span.time.tooltip {
 #torrents #torrent_table > table {
     width: 100%;
 }
+
+#torrents #torrent_table > table .colhead_dark {
+    font-size: 1.3em;
+}
+
+#torrents #torrent_table > table td {
+    padding: 1px 5px;
+}
+
+#torrents #torrent_table td.category {
+    width: 48px;
+}
+
+#torrents #torrent_table td.category a[href$="category=1"],
+#torrents #torrent_table td.category a[href$="category=2"],
+#torrents #torrent_table td.category a[href$="category=3"],
+#torrents #torrent_table td.category a[href$="category=4"],
+#torrents #torrent_table td.category a[href$="category=5"],
+#torrents #torrent_table td.category a[href$="category=6"],
+#torrents #torrent_table td.category a[href$="category=7"],
+#torrents #torrent_table td.category a[href$="category=8"],
+#torrents #torrent_table td.category a[href$="category=9"]
+#torrents #torrent_table td.category a[href$="category=10"] {
+    background: rgb(204, 51, 63) url(Movie.png);
+}
+
+#torrents #torrent_table td.category a[href$="category=1"]:after {
+    content: "Cam";
+} 
+
+#torrents #torrent_table td.category a[href$="category=2"]:after {
+    content: "Telesync";
+}
+
+#torrents #torrent_table td.category a[href$="category=3"]:after {
+    content: "Screeners";
+} 
+
+#torrents #torrent_table td.category a {
+    background-repeat: no-repeat !important;
+    background-position: center -5px !important;
+    display: block;
+    height: 52px;
+    position: relative;
+    width: 72px;
+}
+
+#torrents #torrent_table td.category a:after {
+    position: absolute;
+    color: #fff;
+    bottom: 5px;
+    font-size: 0.8em;
+    text-align: center;
+    width: 100%;
+} 
+
+#torrents #torrent_table td.category img {
+    display: none;
+}
