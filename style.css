@@ -48,7 +48,8 @@ a:hover { color: rgb(204, 51, 63); }
 
 /* form elements */
 input[type=button],
-input[type=submit] {
+input[type=submit],
+#search-button {
     color: #ffffff;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     background: rgb(204, 51, 63);
@@ -79,8 +80,8 @@ input[type=checkbox]::after{
     content: "";
     width: 100%;
     height: 100%;
-    background: rgb(204, 51, 63);
-    color: #ffffff;
+    background: #fcfcfc;
+    color: #222222;
     line-height: 1em;
     top: 0;
     text-align: center;
@@ -1032,6 +1033,36 @@ span.time.tooltip {
 }
 
 /* torrents */
+#torrents #searchtorrents {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#torrents #searchtorrents > input {
+    width: auto;
+    margin: 0 15px;
+    flex-grow: 8;
+}
+
+#torrents #searchtorrents > label {
+    align-self: center;
+}
+
+#torrents #searchtorrents > button {
+    margin-right: 0;
+    width: 90px;
+}
+
+#torrents #searchtorrents #filterTools {
+    margin: 15px 105px 0 0;
+    text-align: right;
+    width: 100%;
+}
+
+#torrents #searchtorrents #filterTools input {
+    margin-left: 15px;
+}
+
 #torrents #categoryFacet {
     display: flex;
     flex-direction: row;
@@ -1055,19 +1086,50 @@ span.time.tooltip {
 }
 
 #torrents #torrent_table > table {
+    border-collapse: collapse;
     width: 100%;
+}
+
+#torrents #torrent_table tr:not(:first-child):hover {
+    background: #f9f9f9;
 }
 
 #torrents #torrent_table > table .colhead_dark {
     font-size: 1.3em;
 }
 
+#torrents #torrent_table > table .colhead_dark td {
+    text-align: center;
+}
+
+#torrents #torrent_table > table .colhead_dark td:nth-child(2) {
+    text-align: left;
+}
+
+#torrents #torrent_table > table .colhead_dark td img {
+    background: rgb(0, 160, 176);
+    padding: 5px 7px;
+}
+#torrents #torrent_table > table .colhead_dark td img:hover { 
+    background-color: rgb(204, 51, 63);
+}
+
 #torrents #torrent_table > table td {
-    padding: 1px 5px;
+    padding: 5px;
 }
 
 #torrents #torrent_table td.category {
-    width: 48px;
+    width: 110px;
+}
+
+#torrents #torrent_table td.name {
+    width: 100%;
+}
+
+#torrents #torrent_table td.size,
+#torrents #torrent_table td.seeders,
+#torrents #torrent_table td.leechers {
+    white-space: nowrap;
 }
 
 #torrents #torrent_table td.category a[href$="category=1"],
@@ -1079,8 +1141,15 @@ span.time.tooltip {
 #torrents #torrent_table td.category a[href$="category=7"],
 #torrents #torrent_table td.category a[href$="category=8"],
 #torrents #torrent_table td.category a[href$="category=9"]
-#torrents #torrent_table td.category a[href$="category=10"] {
+#torrents #torrent_table td.category a[href$="category=32"],
+#torrents #torrent_table td.category a[href$="category=33"] {
     background: rgb(204, 51, 63) url(Movie.png);
+}
+
+#torrents #torrent_table td.category a[href$="category=11"],
+#torrents #torrent_table td.category a[href$="category=12"],
+#torrents #torrent_table td.category a[href$="category=13"] {
+    background: rgb(0, 160, 176) url(Television.png);
 }
 
 #torrents #torrent_table td.category a[href$="category=1"]:after {
@@ -1093,7 +1162,51 @@ span.time.tooltip {
 
 #torrents #torrent_table td.category a[href$="category=3"]:after {
     content: "Screeners";
-} 
+}
+
+#torrents #torrent_table td.category a[href$="category=4"]:after {
+    content: "DVDRips";
+}
+
+#torrents #torrent_table td.category a[href$="category=5"]:after {
+    content: "DVD-R";
+}
+
+#torrents #torrent_table td.category a[href$="category=6"]:after {
+    content: "HD";
+}
+
+#torrents #torrent_table td.category a[href$="category=7"]:after {
+    content: "BDRip";
+}
+
+#torrents #torrent_table td.category a[href$="category=8"]:after,
+#torrents #torrent_table td.category a[href$="category=9"]:after {
+    content: "Boxset";
+}
+
+#torrents #torrent_table td.category a[href$="category=11"]:after {
+    content: "Episodes";
+}
+
+#torrents #torrent_table td.category a[href$="category=12"]:after {
+    content: "Boxset";
+}
+
+
+#torrents #torrent_table td.category a[href$="category=13"]:after {
+    content: "Episodes HD";
+}
+
+
+
+#torrents #torrent_table td.category a[href$="category=32"]:after {
+    content: "Custom DVD-R";
+}
+
+#torrents #torrent_table td.category a[href$="category=33"]:after {
+    content: "Custom HD";
+}
 
 #torrents #torrent_table td.category a {
     background-repeat: no-repeat !important;
@@ -1101,7 +1214,7 @@ span.time.tooltip {
     display: block;
     height: 52px;
     position: relative;
-    width: 72px;
+    width: 100px;
 }
 
 #torrents #torrent_table td.category a:after {
@@ -1115,4 +1228,16 @@ span.time.tooltip {
 
 #torrents #torrent_table td.category img {
     display: none;
+}
+
+#torrents #torrent_table td.quickdownload img {
+    display: none;
+}
+
+#torrents #torrent_table td.quickdownload a {
+    background: rgb(204, 51, 63) url(Download.png) no-repeat;
+    display: block;
+    height: 46px;
+    position: relative;
+    width: 46px;
 }
