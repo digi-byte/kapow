@@ -31,7 +31,7 @@ body {
     font-size: 0.70em;
 }
 a {
-    color: #0295A4;
+    color: rgb(0, 160, 176);
     text-decoration: none;
 }
 a:hover { color: rgb(204, 51, 63); }
