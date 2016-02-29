@@ -1030,3 +1030,26 @@ span.time.tooltip {
 #upload .create_form .important_text {
     color: inherit;
 }
+
+/* torrents */
+#torrents #categoryFacet {
+    display: flex;
+    flex-direction: row;
+}
+
+#torrents #categoryFacet .categoryGroup.boxOuter {
+    margin: 0 15px 15px 0;
+    width: 100%;
+}
+
+#torrents #categoryFacet .categoryGroup.boxOuter:first-child {
+    margin-left: 15px;
+}
+
+#torrents #torrent_table {
+    margin-top: 0;
+}
+
+#torrents #torrent_table > table {
+    width: 100%;
+}
