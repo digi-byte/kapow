@@ -1152,6 +1152,39 @@ span.time.tooltip {
     background: rgb(0, 160, 176) url(Television.png);
 }
 
+#torrents #torrent_table td.category a[href$="category=14"],
+#torrents #torrent_table td.category a[href$="category=15"],
+#torrents #torrent_table td.category a[href$="category=16"],
+#torrents #torrent_table td.category a[href$="category=17"],
+#torrents #torrent_table td.category a[href$="category=18"],
+#torrents #torrent_table td.category a[href$="category=19"],
+#torrents #torrent_table td.category a[href$="category=20"],
+#torrents #torrent_table td.category a[href$="category=21"] {
+    background: rgb(116, 176, 0) url(Game.png);
+}
+
+#torrents #torrent_table td.category a[href$="category=22"],
+#torrents #torrent_table td.category a[href$="category=23"] {
+    background: rgb(237, 201, 81) url(Music.png);
+}
+
+#torrents #torrent_table td.category a[href$="category=24"],
+#torrents #torrent_table td.category a[href$="category=25"] {
+    background: rgb(235, 104, 65) url(Table-Lamp.png);
+}
+
+#torrents #torrent_table td.category a[href$="category=26"],
+#torrents #torrent_table td.category a[href$="category=27"] {
+    background: rgba(237, 201, 81, 0.92) url(Book.png);
+}
+
+#torrents #torrent_table td.category a[href$="category=28"],
+#torrents #torrent_table td.category a[href$="category=29"],
+#torrents #torrent_table td.category a[href$="category=30"],
+#torrents #torrent_table td.category a[href$="category=31"] {
+    background: rgba(235, 104, 65, 0.92) url(Computer.png);
+}
+
 #torrents #torrent_table td.category a[href$="category=1"]:after {
     content: "Cam";
 } 
@@ -1193,12 +1226,81 @@ span.time.tooltip {
     content: "Boxset";
 }
 
-
 #torrents #torrent_table td.category a[href$="category=13"]:after {
     content: "Episodes HD";
 }
 
+#torrents #torrent_table td.category a[href$="category=14"]:after {
+    content: "PC";
+}
 
+#torrents #torrent_table td.category a[href$="category=15"]:after {
+    content: "XBOX";
+}
+
+#torrents #torrent_table td.category a[href$="category=16"]:after {
+    content: "XBOX360";
+}
+
+#torrents #torrent_table td.category a[href$="category=17"]:after {
+    content: "PS2";
+}
+
+#torrents #torrent_table td.category a[href$="category=18"]:after {
+    content: "PS3";
+}
+
+#torrents #torrent_table td.category a[href$="category=19"]:after {
+    content: "PSP";
+}
+
+#torrents #torrent_table td.category a[href$="category=20"]:after {
+    content: "Wii";
+}
+
+#torrents #torrent_table td.category a[href$="category=21"]:after {
+    content: "Nintendo DS";
+}
+
+#torrents #torrent_table td.category a[href$="category=22"]:after {
+    content: "Music Videos";
+}
+
+#torrents #torrent_table td.category a[href$="category=23"]:after {
+    content: "Audio";
+}
+
+#torrents #torrent_table td.category a[href$="category=24"]:after {
+    content: "Anime";
+}
+
+#torrents #torrent_table td.category a[href$="category=25"]:after {
+    content: "Cartoons";
+}
+
+#torrents #torrent_table td.category a[href$="category=26"]:after {
+    content: "Audio books";
+}
+
+#torrents #torrent_table td.category a[href$="category=27"]:after {
+    content: "eBooks";
+}
+
+#torrents #torrent_table td.category a[href$="category=28"]:after {
+    content: "PC-ISO";
+}
+
+#torrents #torrent_table td.category a[href$="category=29"]:after {
+    content: "Mac";
+}
+
+#torrents #torrent_table td.category a[href$="category=30"]:after {
+    content: "PDA";
+}
+
+#torrents #torrent_table td.category a[href$="category=31"]:after {
+    content: "0-day";
+}
 
 #torrents #torrent_table td.category a[href$="category=32"]:after {
     content: "Custom DVD-R";
