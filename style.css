@@ -25,7 +25,8 @@ ul {
     margin-left: 0;
 }
 body { 
-    background-color: #d0f0ff;
+    /*background-color: #d0f0ff; */
+    background-color: #ececec;
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
     font-size: 0.70em;
@@ -980,30 +981,18 @@ span.time.tooltip {
 }
 
 /* upload */
-#upload #content .thin {
-    padding: 15px;
-}
-
-#upload #content .thin > p:first-child {
+#upload #content .thin > .header + p {
     font-size: 1.5em;
     color: rgb(0, 160, 176);
 }
 
-#upload #content .thin > p:first-child input {
-    margin-top: 15px;
+#upload #content .thin > .header + p input {
+    margin: 15px 15px 0;
     font-size: 0.7em;
     max-width: 500px;
     text-align: center;
 }
 
-#upload .create_form {
-    background: #ffffff;
-    margin: 15px 0;
-    color: #ababab;
-    font-size: 1.3em;
-    padding: 15px;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-}
 #upload .create_form tr:hover {
     background: #f9f9f9;
 }
