@@ -1037,6 +1037,10 @@ span.time.tooltip {
     flex-direction: row;
 }
 
+#torrents #categoryFacet.hidden {
+    display: none;
+}
+
 #torrents #categoryFacet .categoryGroup.boxOuter {
     margin: 0 15px 15px 0;
     width: 100%;
