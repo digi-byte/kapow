@@ -46,6 +46,10 @@ a:hover { color: rgb(204, 51, 63); }
     cursor: pointer;
 }
 
+h3 {
+    font-weight: normal;
+}
+
 /* form elements */
 input[type=button],
 input[type=submit],
@@ -924,6 +928,14 @@ span.time.tooltip {
 }
 
 /* wiki */
+#wiki .create_form {
+    width: 100%;
+}
+
+#wiki .create_form h3 {
+    margin: 15px 0;
+}
+
 #wiki #content > .thin {
     flex-wrap: wrap;
     flex-direction: row;
