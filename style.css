@@ -1343,3 +1343,14 @@ span.time.tooltip {
     position: relative;
     width: 46px;
 }
+
+/* user history */
+#userhistory .thin > .header br,
+#userhistory .thin > .header+br {
+    display: none;
+}
+
+#userhistory .thin > .header .linkbox {
+    width: 100%;
+    text-align: center;
+}
