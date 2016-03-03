@@ -1351,6 +1351,7 @@ span.time.tooltip {
 }
 
 #userhistory .thin > .header .linkbox {
+    font-size: 1.43em;
     width: 100%;
     text-align: center;
 }
