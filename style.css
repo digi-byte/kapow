@@ -1393,6 +1393,23 @@ form tr:not(:first-child):hover {
     display: none;
 }
 
+#userhistory .forum_post {
+    width: 100%;
+}
+
+#userhistory .forum_post tr:first-child span:last-child {
+    margin-left: 15px;
+    line-height: 1.3em;
+}
+
+#userhistory .thin > .center {
+    padding: 0 15px;
+    font-weight: 400;
+    color: #7a7a7a;
+    font-size: 1.4em;
+    margin: 15px 0;
+}
+
 /* inbox */
 #inbox form td {
     width: auto;
