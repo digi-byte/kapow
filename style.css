@@ -925,9 +925,11 @@ form tr:not(:first-child):hover {
     margin-bottom: 15px;
 }
 
+#forums #thread_notes+a+form input[type="submit"],
 #forums #thread_notes+a+form+br+h3+form input[type="submit"] {
     margin-left: 15px;
     margin-right: 0;
+    font-size: 1em;
 }
 
 /* donate */
