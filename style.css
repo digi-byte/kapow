@@ -551,6 +551,24 @@ span.time.tooltip {
 }
 
 #user form { display: flex; }
+#user form.manage_form { 
+    flex-direction: column;    
+}
+
+#user form.manage_form table {
+    border-spacing: initial;
+    width: 100%; 
+}
+#user form.manage_form table td {
+    padding: 7px 0 8px;
+    width: 70%;
+}
+#user form.manage_form td:first-child {
+    width: 30%;
+}
+#user form.manage_form tr:not(:first-child):hover {
+    background: #f9f9f9;
+}
 #user .user_options {
     border-spacing: 0;
 }
