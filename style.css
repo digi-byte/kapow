@@ -1419,6 +1419,32 @@ form tr:not(:first-child):hover {
     text-align: left;
 }
 
+#inbox input[type="submit"] {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+#inbox #messageform {
+    margin-top: 10px;
+}
+
+#inbox #searchbox input[type="radio"] {
+    margin-left: 15px;
+}
+
+#inbox #searchbox input[value="user"] {
+    margin-left: 0;
+}
+
+#inbox #searchbox .floatRight {
+    margin-left: 30px;
+}
+
+#inbox input[type="search"] {
+    margin-top: 15px;
+    width: 100% !important;
+}
+
 /* wrapper */
 #reportsv2 .thin.float_clear {
     flex-direction: row;
