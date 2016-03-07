@@ -1373,17 +1373,17 @@ form tr:not(:first-child):hover {
 }
 
 /* wrapper */
-#wrapper .thin.float_clear {
+#reportsv2 .thin.float_clear {
     flex-direction: row;
 }
 
-#wrapper h3 {
+#reportsv2 h3 {
     padding: 0 15px;
     font-weight: 400;
     color: #7a7a7a;
     font-size: 1.4em;
 }
 
-#wrapper .header {
+#reportsv2 .header {
     margin-bottom: 15px;
 }
