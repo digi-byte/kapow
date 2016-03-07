@@ -1368,3 +1368,12 @@ form tr:not(:first-child):hover {
     width: 100%;
     text-align: center;
 }
+
+/* inbox */
+#inbox form td {
+    width: auto;
+}
+
+#inbox form td:first-child {
+    text-align: left;
+}
