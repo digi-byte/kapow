@@ -555,18 +555,18 @@ span.time.tooltip {
     flex-direction: column;    
 }
 
-#user form.manage_form table {
+form table {
     border-spacing: initial;
     width: 100%; 
 }
-#user form.manage_form table td {
+form table td {
     padding: 7px 0 8px;
-    width: 70%;
+    width: 80%;
 }
-#user form.manage_form td:first-child {
-    width: 30%;
+form td:first-child {
+    width: 20%;
 }
-#user form.manage_form tr:not(:first-child):hover {
+form tr:not(:first-child):hover {
     background: #f9f9f9;
 }
 #user .user_options {
@@ -579,16 +579,6 @@ span.time.tooltip {
 }
 #user .user_options td.label strong {
     font-weight: normal;
-}
-#user .user_options tr:not(:first-child):hover {
-    background: #f9f9f9;
-}
-#user .user_options td {
-    width: 70%;
-    padding: 7px 0 8px;
-}
-#user .user_options td:first-child {
-    width: 30%;
 }
 #user .user_options .textboxButton {
     font-size: 1em;
