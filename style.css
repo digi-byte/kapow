@@ -55,6 +55,14 @@ h6 {
     font-weight: normal;
 }
 
+td {
+    text-align: left;
+}
+
+td input[type=submit] {
+    float: right;
+}
+
 /* form elements */
 input[type=button],
 input[type=submit],
