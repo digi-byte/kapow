@@ -411,6 +411,13 @@ span.time.tooltip {
     font-size: 0.7em;
 }
 
+.thin > h3 {
+    padding: 0 15px;
+    font-weight: 400;
+    color: #7a7a7a;
+    font-size: 1.4em;
+}
+
 .graph {
     margin: 15px 0;
 }
@@ -900,6 +907,27 @@ form tr:not(:first-child):hover {
 
 #forums .forum_index td.unread ~ td a {
     font-weight: normal;
+}
+
+#forums #thread_notes+a {
+    text-align: center;
+}
+
+#forums #thread_notes_table #textarea_wrap_1 {
+    order: 2;
+}
+
+#forums #thread_notes_table .textboxButton {
+    font-size: 1em;
+}
+
+#forums #thread_notes_table .textboxContainer {
+    margin-bottom: 15px;
+}
+
+#forums #thread_notes+a+form+br+h3+form input[type="submit"] {
+    margin-left: 15px;
+    margin-right: 0;
 }
 
 /* donate */
