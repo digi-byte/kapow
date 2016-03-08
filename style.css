@@ -1549,3 +1549,53 @@ form tr:not(:first-child):hover {
 #reportsv2 .header {
     margin-bottom: 15px;
 }
+
+/* friends */
+#friends .friends_table tr:hover {
+    background: none;    
+}
+
+#friends .friends_table tr:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#friends .friends_table tr:nth-child(2) td {
+    padding: 0;
+}
+
+#friends .friends_table tr:nth-child(2) td:first-child {
+    padding-right: 15px;
+    width: auto;
+}
+
+#friends .friends_table tr:nth-child(2) td:nth-child(2) {
+    align-items: stretch;
+    display: flex;
+    flex-grow: 2;
+}
+
+#friends .friends_table tr:nth-child(2) td:last-child {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+    width: 100%;
+}
+
+#friends .friends_table input[type="submit"] {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+#friends .friends_table .colhead {
+    font-size: 1em;
+}
+
+#friends .friends_table .colhead .floatLeft {
+    float: none;
+    margin-right: 10px;
+}
+
+#friends .friends_table .colhead strong {
+    font-weight: normal;
+}
