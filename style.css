@@ -1599,3 +1599,34 @@ form tr:not(:first-child):hover {
 #friends .friends_table .colhead strong {
     font-weight: normal;
 }
+
+/* user invite */
+#user #user_invite.thin {
+    flex-direction: column;
+}
+
+#user #user_invite .field_div,
+#user #user_invite .field_div .input {
+    display: flex;
+    padding: 0;
+}
+
+#user #user_invite .field_div {
+    width: 100%;
+}
+
+#user #user_invite .field_div .input {
+    flex-grow: 2;
+}
+
+#user #user_invite .field_div .input input[type="email"] {
+    margin-right: 15px;
+}
+
+#user #user_invite .field_div .label {
+    text-align: left;
+    line-height: 2em;
+    float: none;
+    padding: 0 15px 0 0;
+    width: auto;
+}
