@@ -1534,6 +1534,33 @@ form tr:not(:first-child):hover {
     order: 5;
 }
 
+#inbox #messageform {
+    margin: 0;
+}
+
+#inbox #messageform h3 {
+    margin: 15px 0;
+    font-size: 1.3em;
+}
+
+#inbox #messageform h3:first-child {
+    margin-top: 0;
+}
+
+#inbox #messageform .textboxButton,
+#inbox #messageform input[type="submit"],
+#inbox #messageform input[type="button"] {
+    font-size: 1em;
+}
+
+#inbox #messageform #buttons {
+    text-align: right;
+}
+
+#inbox #messageform #buttons input:first-child {
+    margin-right: 0;
+}
+
 /* wrapper */
 #reportsv2 .thin.float_clear {
     flex-direction: row;
