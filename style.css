@@ -1534,30 +1534,30 @@ form tr:not(:first-child):hover {
     order: 5;
 }
 
-#inbox #messageform {
+#inbox #messageform.send_form {
     margin: 0;
 }
 
-#inbox #messageform h3 {
+#inbox #messageform.send_form h3 {
     margin: 15px 0;
     font-size: 1.3em;
 }
 
-#inbox #messageform h3:first-child {
+#inbox #messageform.send_form h3:first-child {
     margin-top: 0;
 }
 
-#inbox #messageform .textboxButton,
-#inbox #messageform input[type="submit"],
-#inbox #messageform input[type="button"] {
+#inbox #messageform.send_form .textboxButton,
+#inbox #messageform.send_form input[type="submit"],
+#inbox #messageform.send_form input[type="button"] {
     font-size: 1em;
 }
 
-#inbox #messageform #buttons {
+#inbox #messageform.send_form #buttons {
     text-align: right;
 }
 
-#inbox #messageform #buttons input:first-child {
+#inbox #messageform.send_form #buttons input:first-child {
     margin-right: 0;
 }
 
