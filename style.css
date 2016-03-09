@@ -901,8 +901,8 @@ form tr:not(:first-child):hover {
     font-weight: normal;
 }
 
-#searchthread td {
-    padding: 3px;
+#searchthread tr:hover {
+    background: none;
 }
 
 #forums .forum_index td.unread ~ td a {
@@ -930,6 +930,38 @@ form tr:not(:first-child):hover {
     margin-left: 15px;
     margin-right: 0;
     font-size: 1em;
+}
+
+#forums #searchforum {
+    margin-bottom: 0;
+}
+
+#forums #searchforum form {
+    background: #ffffff;
+    margin: 15px;
+    color: #a0a0a0;
+    font-size: 1.3em;
+    padding: 15px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#forums #searchforum h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: rgb(0, 160, 176);
+}
+
+#forums #searchforum strong {
+    font-weight: normal;
+}
+
+#forums #searchforum tr:hover {
+    background: none;
+}
+
+#forums #searchforum br {
+    display: none;
 }
 
 /* donate */
