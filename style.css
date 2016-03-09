@@ -1561,6 +1561,36 @@ form tr:not(:first-child):hover {
     margin-right: 0;
 }
 
+#inbox form[name="forward"] input[type="submit"] {
+    font-size: 1em;
+}
+
+#inbox form[name="forward"] .box.pad {
+    display: flex;
+}
+
+#inbox form[name="forward"] .box.pad label {
+    white-space: nowrap;
+    margin-right: 15px;
+    align-self: center;
+}
+
+#inbox .head {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+#inbox .head strong {
+    color: #a0a0a0;
+    font-size: 1.3em;
+}
+
+#inbox .head .floatRight {
+    margin-left: 5px;
+    font-size: 0.8em;
+    align-self: center;
+}
+
 /* wrapper */
 #reportsv2 .thin.float_clear {
     flex-direction: row;
