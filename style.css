@@ -71,7 +71,7 @@ input[type=submit],
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     background: rgb(204, 51, 63);
     border: 0;
-    font-size: 1.3em;
+    font-size: 1em;
     padding: 5px 15px;
     margin-right: 15px;
     margin-bottom: 1px;
@@ -962,6 +962,34 @@ form tr:not(:first-child):hover {
 
 #forums #searchforum br {
     display: none;
+}
+
+#forums #forum_search_cat_list td {
+    width: auto;
+}
+
+#forums .search_form tr:hover {
+    background: none;
+}
+
+#forums .search_form > div > table > tbody > tr > td:first-child strong {
+    font-weight: normal;
+}
+
+#forums .search_form + .linkbox + h3 {
+    margin-bottom: 15px;
+}
+
+#forums .search_form + .linkbox + h3 + .boxOuter .forum_list {
+    margin-top: 0;
+}
+
+#forums .search_form + .linkbox + h3 + .boxOuter .forum_list tr:not(:first-child):hover {
+    background: #f9f9f9;
+}
+
+#forums .search_form + .linkbox + h3 + .boxOuter .forum_list td {
+    padding: 3px 0;
 }
 
 /* donate */
