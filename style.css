@@ -768,26 +768,46 @@ form tr:not(:first-child):hover {
     background: rgba(0, 160, 176, 0.92);
 }
 
-#textarea_wrap_0 {
+#textarea_wrap_0,
+#textarea_wrap_1,
+#textarea_wrap_2,
+#textarea_wrap_3,
+#textarea_wrap_4 {
     display: flex;
     margin-bottom: 15px;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     order: 2;
 }
 
-#quickpostform #textarea_wrap_0 {
+#quickpostform #textarea_wrap_0,
+#quickpostform #textarea_wrap_1,
+#quickpostform #textarea_wrap_2,
+#quickpostform #textarea_wrap_3,
+#quickpostform #textarea_wrap_4 {
     margin: 0 15px 15px;
 }
 
-#textarea_wrap_0 .textboxField {
+#textarea_wrap_0 .textboxField,
+#textarea_wrap_1 .textboxField,
+#textarea_wrap_2 .textboxField,
+#textarea_wrap_3 .textboxField,
+#textarea_wrap_4 .textboxField {
     border: 0;
     padding: 15px;
     flex-grow: 1;
     height: 100px;
 }
 
-#preview_wrap_0 ~ br {
+#preview_wrap_0 ~ br,
+#preview_wrap_1 ~ br,
+#preview_wrap_2 ~ br,
+#preview_wrap_3 ~ br,
+#preview_wrap_4 ~ br {
     display: none;
+}
+
+#user #personal_settings .submit_div {
+    text-align: right;
 }
 
 #quickpostform {
