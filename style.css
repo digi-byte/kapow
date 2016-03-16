@@ -595,9 +595,6 @@ form tr:not(:first-child):hover {
 #user .user_options td.label strong {
     font-weight: normal;
 }
-#user .user_options .textboxButton {
-    font-size: 1em;
-}
 #user .user_options textarea {
     background-color: #fcfcfc;
 }
@@ -711,7 +708,6 @@ form tr:not(:first-child):hover {
     padding-bottom: 15px;
 }
 
-#forums .forum_post:not(.preview_wrap) .textboxButton,
 #forums .forum_post:not(.preview_wrap) .floatRight input {
     font-size: 1em;    
 }
@@ -755,7 +751,7 @@ form tr:not(:first-child):hover {
     color: #ffffff;
     cursor: pointer;
     display: inline-block;
-    font-size: 1.3em;
+    font-size: 1;
     flex-grow: 1;
     margin-left: 15px;
     padding: 5px;
@@ -937,10 +933,6 @@ form tr:not(:first-child):hover {
     order: 2;
 }
 
-#forums #thread_notes_table .textboxButton {
-    font-size: 1em;
-}
-
 #forums #thread_notes_table .textboxContainer {
     margin-bottom: 15px;
 }
@@ -1114,6 +1106,26 @@ form tr:not(:first-child):hover {
     font-size: 1em;
 }
 
+#wiki #wiki_create.thin {
+    flex-direction: column;
+}
+
+#wiki #wiki_create .create_form > div > div:last-of-type {
+    text-align: right !important;
+    margin-top: 15px;
+}
+
+#wiki #wiki_create .create_form strong {
+    display: block;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+#wiki #wiki_create .create_form .boxOuter {
+    margin: 0;
+    font-size: 1em;
+}
+
 /* upload */
 #upload #content .thin > .header + p {
     font-size: 1.5em;
@@ -1136,11 +1148,6 @@ form tr:not(:first-child):hover {
 
 #upload .create_form tr > td:first-child {
     width: 200px;
-}
-
-#upload .create_form .textboxButton,
-#upload .create_form input[type=submit] {
-    font-size: 1em;
 }
 
 #upload .create_form input[type=submit] {
@@ -1537,12 +1544,6 @@ form tr:not(:first-child):hover {
     text-align: center;
 }
 
-#inbox form[name="reply"] .textboxButton,
-#inbox form[name="reply"] input[type="submit"],
-#inbox form[name="reply"] input[type="button"] {
-    font-size: 1em;
-}
-
 #inbox form[name="reply"] input[type="button"] {
     margin-right: 0;
 }
@@ -1625,12 +1626,6 @@ form tr:not(:first-child):hover {
 
 #inbox #messageform.send_form h3:first-child {
     margin-top: 0;
-}
-
-#inbox #messageform.send_form .textboxButton,
-#inbox #messageform.send_form input[type="submit"],
-#inbox #messageform.send_form input[type="button"] {
-    font-size: 1em;
 }
 
 #inbox #messageform.send_form #buttons {
