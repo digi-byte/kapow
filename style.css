@@ -1136,6 +1136,44 @@ form tr:not(:first-child):hover {
     margin-bottom: 15px;
 }
 
+#wiki #wiki_browse .boxOuter:last-child {
+    margin-top: 0;
+}
+
+#wiki #wiki_browse .boxOuter:last-child p {
+    margin: 15px 0;
+}
+
+#wiki #wiki_browse .boxOuter:last-child p:first-child {
+    margin-top: 0;
+}
+
+#wiki #wiki_browse table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+#wiki #wiki_browse table td {
+    padding: 7px 0 8px;
+}
+
+#wiki #wiki_browse table tr:first-child td {
+    padding-top: 0;
+}
+
+#wiki #wiki_browse tr:not(:first-child):hover {
+    background: #f9f9f9;
+}
+
+#wiki #wiki_browse.thin {
+    flex-direction: column;
+}
+
+#wiki #wiki_browse br,
+#wiki #wiki_browse br+.header {
+    display: none;
+}
+
 /* upload */
 #upload #content .thin > .header + p {
     font-size: 1.5em;
