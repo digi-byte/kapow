@@ -1053,6 +1053,10 @@ form tr:not(:first-child):hover {
     flex-direction: row;
 }
 
+#wiki #content > .thin > .boxOuter {
+    width: 100%;
+}
+
 #wiki .header {
     flex-grow: 200;
     width: 100%;
@@ -1098,10 +1102,6 @@ form tr:not(:first-child):hover {
     display: flex;
 }
 
-#wiki #wiki_create.thin {
-    flex-direction: column;
-}
-
 #wiki .edit_form > div > input,
 #wiki #wiki_create .create_form > div > input {
     margin-bottom: 15px;
@@ -1136,7 +1136,11 @@ form tr:not(:first-child):hover {
     margin-bottom: 15px;
 }
 
-#wiki #wiki_browse .boxOuter:last-child {
+#wiki #wiki_browse .header {
+    margin-bottom: 15px;
+}
+
+#wiki #wiki_browse .boxOuter {
     margin-top: 0;
 }
 
@@ -1148,30 +1152,34 @@ form tr:not(:first-child):hover {
     margin-top: 0;
 }
 
-#wiki #wiki_browse table {
+#wiki table {
     border-spacing: 0;
     width: 100%;
 }
 
-#wiki #wiki_browse table td {
+#wiki table td {
     padding: 7px 0 8px;
 }
 
-#wiki #wiki_browse table tr:first-child td {
+#wiki table tr:first-child td {
     padding-top: 0;
 }
 
-#wiki #wiki_browse tr:not(:first-child):hover {
+#wiki tr:not(:first-child):hover {
     background: #f9f9f9;
-}
-
-#wiki #wiki_browse.thin {
-    flex-direction: column;
 }
 
 #wiki #wiki_browse br,
 #wiki #wiki_browse br+.header {
     display: none;
+}
+
+#wiki select+select {
+    margin-top: 15px;
+}
+
+#wiki td.label strong {
+    font-weight: normal;
 }
 
 /* upload */
