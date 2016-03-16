@@ -372,6 +372,7 @@ select {
 }
 
 .boxOuter {
+    flex-grow: 1;
     background: #ffffff;
     margin: 15px;
     color: #a0a0a0;
@@ -1047,14 +1048,6 @@ form tr:not(:first-child):hover {
 }
 
 /* wiki */
-#wiki .create_form {
-    width: 100%;
-}
-
-#wiki .create_form h3 {
-    margin: 15px 0;
-}
-
 #wiki #content > .thin {
     flex-wrap: wrap;
     flex-direction: row;
@@ -1065,16 +1058,11 @@ form tr:not(:first-child):hover {
     width: 100%;
 }
 
-
 #wiki .main_column .wiki_article h3,
 #wiki .main_column .wiki_article h4,
 #wiki .main_column .wiki_article h5,
 #wiki .main_column .wiki_article h6 {
     font-weight: normal;
-}
-
-#wiki .main_column .wiki_article .pad > div {
-    text-align: left !important;
 }
 
 #wiki .sidebar > .boxOuter .head {
@@ -1106,24 +1094,46 @@ form tr:not(:first-child):hover {
     font-size: 1em;
 }
 
+#wiki .sidebar .add_form {
+    display: flex;
+}
+
 #wiki #wiki_create.thin {
     flex-direction: column;
 }
 
+#wiki .edit_form > div > input,
+#wiki #wiki_create .create_form > div > input {
+    margin-bottom: 15px;
+}
+
+#wiki .edit_form h3,
+#wiki #wiki_create h3 {
+    margin-bottom: 15px;
+}
+
+#wiki .edit_form > div > div:last-of-type,
 #wiki #wiki_create .create_form > div > div:last-of-type {
     text-align: right !important;
     margin-top: 15px;
 }
 
+#wiki .edit_form strong,
 #wiki #wiki_create .create_form strong {
     display: block;
     font-weight: normal;
     margin-top: 15px;
 }
 
+#wiki .edit_form .boxOuter,
 #wiki #wiki_create .create_form .boxOuter {
     margin: 0;
     font-size: 1em;
+}
+
+#wiki .edit_form .boxOuter.preview_wrap,
+#wiki #wiki_create .create_form .boxOuter.preview_wrap {
+    margin-bottom: 15px;
 }
 
 /* upload */
