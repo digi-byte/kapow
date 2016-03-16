@@ -1009,6 +1009,53 @@ form tr:not(:first-child):hover {
     padding: 3px 0;
 }
 
+#forums #forums_create tr:hover {
+    background: none;
+}
+
+#forums #forums_create > .header {
+    margin-bottom: 15px;
+}
+
+#forums #forums_create input#title {
+    width: 100% !important;
+}
+
+#forums #forums_create td.center {
+    text-align: left;
+}
+
+#forums #forums_create td.center strong {
+    font-weight: normal;
+}
+
+#forums #forums_create #buttons {
+    text-align: right;
+    margin-top: 10px;
+}
+
+#forums #forums_create input[type="text"] {
+    width: 100% !important;
+}
+
+#forums #forums_create #answer_block br {
+    display: none;
+}
+
+#forums #forums_create #answer_block br + input[type="text"] {
+    margin-top: 15px;
+}
+
+#forums #forums_create #answer_block input[type="text"]:first-child {
+    margin-bottom: 15px;
+}
+
+#forums #forums_create #threadpoll strong {
+    font-weight: normal;
+    margin: 15px 0;
+    display: block;
+}
+
 /* donate */
 #donate #content > .thin {
     flex-wrap: wrap;
