@@ -1186,6 +1186,24 @@ form tr:not(:first-child):hover {
     font-weight: normal;
 }
 
+#wiki .thin > form {
+    flex-grow: 1;
+    background: #ffffff;
+    margin: 15px;
+    color: #a0a0a0;
+    font-size: 1.3em;
+    padding: 15px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#wiki .thin > form td {
+    width: auto;
+}
+
+#wiki .thin > form tr:last-of-type:hover {
+    background: none;
+}
+
 /* staff */
 #staff .box.pad br:first-child {
     display: none;
