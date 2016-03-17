@@ -1959,3 +1959,32 @@ form tr:not(:first-child):hover {
     width: calc(100% - 30px);
     padding: 15px;
 }
+
+/* edit notifications */
+#user #filter_form {
+    background: #ffffff;
+    margin: 15px;
+    color: #a0a0a0;
+    font-size: 1.3em;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    width: calc(100% - 30px);
+    padding: 15px;
+}
+
+#user #filter_form strong {
+    font-weight: normal;
+}
+
+#user #filter_form .center {
+    text-align: left;
+    padding-top: 15px;
+}
+
+#user #filter_form tr:nth-child(2):hover,
+#user #filter_form tr:last-child:hover {
+    background: none;
+}
+
+#user #filter_form tr:first-child:hover {
+    background: #f9f9f9;
+}
