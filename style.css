@@ -1988,3 +1988,116 @@ form tr:not(:first-child):hover {
 #user #filter_form tr:first-child:hover {
     background: #f9f9f9;
 }
+
+/* notifications */
+#torrents .thin.widethin > table.layout {
+    width: 100%;
+}
+
+#torrents .thin.widethin > table.layout td {
+    padding: 0 15px;
+    font-weight: 400;
+    color: #7a7a7a;
+    font-size: 1.4em;
+    padding: 15px 0;
+}
+
+#torrents .thin.widethin > table.layout td a {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.72em;
+}
+
+/* toolbox */
+#tools .add_form .rowa td {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#tools .add_form .rowa td label {
+    margin-right: 15px;
+}
+
+#tools .add_form .rowa td select {
+    flex-grow: 1;
+}
+
+#tools .add_form .rowa td input {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+#tools table {
+    width: 100%;
+}
+
+#tools .search_form {
+    display: flex;
+    margin: 15px 0 0;
+}
+
+#tools .search_form[name="torrents"] {
+    margin-top: 0;
+}
+
+#tools .search_form input[type="submit"] {
+    margin-left: 15px;
+}
+
+#tools #messageform #quickpost h3 {
+    margin: 15px 0
+}
+
+#tools #messageform #quickpost h3:first-child {
+    margin-top: 0;
+}
+
+#tools #messageform .box.pad > br {
+    display: none;
+}
+
+#tools #messageform #buttons {
+    margin-top: 15px;
+    text-align: right;
+}
+
+#tools #messageform #from_system {
+    margin-right: 5px;
+}
+
+#tools [name="news_post"] h3 {
+    margin: 15px 0
+}
+
+#tools [name="news_post"] h3:first-child {
+    margin-top: 0;
+}
+
+#tools [name="news_post"] .box.pad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#tools [name="news_post"] .box.pad > * {
+    width: 100%;
+}
+
+#tools [name="news_post"] .box.pad > br {
+    display: none;
+}
+
+#tools [name="news_post"] .box.pad .submit_div,
+#tools [name="news_post"] .box.pad div.center {
+    margin-left: 15px;
+    width: auto;
+}
+
+#tools [name="news_post"] + h2 {
+    color: #0295A4;
+    margin: 15px 15px 0;
+    font-weight: normal;
+    font-size: 1.5em;
+    width: 100%;
+}
