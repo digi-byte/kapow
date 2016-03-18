@@ -6,6 +6,14 @@
 @font-size_3: 15px;
 @font-size_4: 11px;
 
+.getImage(@name) {
+    @image: "Images/@{themeName}/@{name}";   
+}
+
+.getIcon(@name) {
+    @image: "Icons/@{iconType}/@{name}";   
+}
+
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300,300italic,800,800italic";
 
 #site_debug {
@@ -378,7 +386,8 @@ select {
 	display: none;
 }
 #logo {
-	background: no-repeat center top url("logo.jpg");
+	.getImage("logo.jpg");
+    background: no-repeat center top url(@image);
 	background-size: cover;
 	opacity: 0.5;
 	height: 160px;
@@ -444,50 +453,58 @@ select {
 	#nav_index {
 		a {
 			background-color: @color_3;
-			background-image: url(Home.png);
+            .getIcon("Home.png");
+			background-image: url(@image);
 		}
 	}
 	#nav_torrents {
 		a {
 			background-color: @color_16;
-			background-image: url(Download.png);
+            .getIcon("Download.png");
+			background-image: url(@image);
 		}
 	}
 	#nav_forums {
 		a {
 			background-color: @color_17;
-			background-image: url(Typewriter.png);
+            .getIcon("Typewriter.png");
+			background-image: url(@image);
 		}
 	}
 	#nav_irc {
 		a {
 			background-color: @color_18;
-			background-image: url(Chat.png);
+            .getIcon("Chat.png");
+			background-image: url(@image);
 		}
 	}
 	#nav_wiki {
 		a {
 			background-color: @color_2;
-			background-image: url(Message-Information.png);
+            .getIcon("Message-Information.png");
+			background-image: url(@image);
 		}
 	}
 	#nav_donate {
 		a {
 			background-color: @color_5;
-			background-image: url(Donate.png);
+            .getIcon("Donate.png");
+			background-image: url(@image);
 			color: @color_1 !important;
 		}
 	}
 	#nav_upload {
 		a {
 			background-color: @color_19;
-			background-image: url(Upload.png);
+            .getIcon("Upload.png");
+			background-image: url(@image);
 		}
 	}
 	#nav_uploaded {
 		a {
 			background-color: @color_20;
-			background-image: url(Uploads.png);
+            .getIcon("Uploads.png");
+			background-image: url(@image);
 		}
 		flex-grow: 0;
 	}
@@ -495,7 +512,8 @@ select {
 		order: 7;
 		a {
 			background-color: @color_21;
-			background-image: url(Request.png);
+            .getIcon("Request.png");
+			background-image: url(@image);
 		}
 	}
 	li.active {
@@ -605,7 +623,7 @@ select {
 		width: 100%;
 	}
 	li {
-		background: no-repeat left -2px url(Search.png);
+        background: no-repeat left -2px url(@searchIcon);
 		display: flex;
 		overflow: hidden;
 		padding-left: 48px;
@@ -1616,30 +1634,36 @@ form {
                 &[href$="category=9"],
                 &[href$="category=32"],
                 &[href$="category=33"] {
-				    background: @color_3 url(Movie.png);
+				    .getIcon("Movie.png");
+                    background: @color_3 url(@image);
                 }
                 &[href$="category=11"],
                 &[href$="category=12"],
                 &[href$="category=13"] {
-				    background: @color_2 url(Television.png);
+                    .getIcon("Television.png");
+				    background: @color_2 url(@image);
                 }
                 &[href$="category=22"],
                 &[href$="category=23"] {
-				    background: @color_17 url(Music.png);
+                    .getIcon("Music.png");
+				    background: @color_17 url(@image);
                 }
                 &[href$="category=24"],
                 &[href$="category=25"] {
-				    background: @color_19 url(Table-Lamp.png);
+                    .getIcon("Table-Lamp.png");
+				    background: @color_19 url(@image);
                 }
                 &[href$="category=26"],
                 &[href$="category=27"] {
-				    background: @color_18 url(Book.png);
+				    .getIcon("Book.png");
+                    background: @color_18 url(@image);
                 }
                 &[href$="category=28"],
                 &[href$="category=29"],
                 &[href$="category=30"],
                 &[href$="category=31"] {
-				    background: @color_20 url(Computer.png);
+				    .getIcon("Computer.png");
+                    background: @color_20 url(@image);
                 } 
 			}
 			img {
@@ -1659,7 +1683,8 @@ form {
 				display: none;
 			}
 			a {
-				background: @color_3 url(Download.png) no-repeat;
+				.getIcon("Download.png");
+                background: @color_3 url(@image) no-repeat;
 				display: block;
 				height: 46px;
 				position: relative;

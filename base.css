@@ -330,7 +330,7 @@ select {
   display: none;
 }
 #logo {
-  background: no-repeat center top url("logo.jpg");
+  background: no-repeat center top url("Images/Bright/logo.jpg");
   background-size: cover;
   opacity: 0.5;
   height: 160px;
@@ -396,46 +396,46 @@ select {
 }
 #menu #nav_index a {
   background-color: #cc333f;
-  background-image: url(Home.png);
+  background-image: url("Icons/Bright/Home.png");
 }
 #menu #nav_torrents a {
   background-color: rgba(204, 51, 63, 0.92);
-  background-image: url(Download.png);
+  background-image: url("Icons/Bright/Download.png");
 }
 #menu #nav_forums a {
   background-color: #edc951;
-  background-image: url(Typewriter.png);
+  background-image: url("Icons/Bright/Typewriter.png");
 }
 #menu #nav_irc a {
   background-color: rgba(237, 201, 81, 0.92);
-  background-image: url(Chat.png);
+  background-image: url("Icons/Bright/Chat.png");
 }
 #menu #nav_wiki a {
   background-color: #00a0b0;
-  background-image: url(Message-Information.png);
+  background-image: url("Icons/Bright/Message-Information.png");
 }
 #menu #nav_donate a {
   background-color: rgba(0, 160, 176, 0.92);
-  background-image: url(Donate.png);
+  background-image: url("Icons/Bright/Donate.png");
   color: #fffffa !important;
 }
 #menu #nav_upload a {
   background-color: #eb6841;
-  background-image: url(Upload.png);
+  background-image: url("Icons/Bright/Upload.png");
 }
 #menu #nav_uploaded {
   flex-grow: 0;
 }
 #menu #nav_uploaded a {
   background-color: rgba(235, 104, 65, 0.92);
-  background-image: url(Uploads.png);
+  background-image: url("Icons/Bright/Uploads.png");
 }
 #menu #nav_requests {
   order: 7;
 }
 #menu #nav_requests a {
   background-color: #74b000;
-  background-image: url(Request.png);
+  background-image: url("Icons/Bright/Request.png");
 }
 #menu li.active a {
   border-bottom-width: 5px;
@@ -516,7 +516,7 @@ select {
   width: 100%;
 }
 #searchbars li {
-  background: no-repeat left -2px url(Search.png);
+  background: no-repeat left -2px url("Images/Dark/Search.png");
   display: flex;
   overflow: hidden;
   padding-left: 48px;
@@ -1320,30 +1320,30 @@ form tr:not(:first-child):hover {
 #torrents #torrent_table td.category a[href$="category=9"],
 #torrents #torrent_table td.category a[href$="category=32"],
 #torrents #torrent_table td.category a[href$="category=33"] {
-  background: #cc333f url(Movie.png);
+  background: #cc333f url("Icons/Bright/Movie.png");
 }
 #torrents #torrent_table td.category a[href$="category=11"],
 #torrents #torrent_table td.category a[href$="category=12"],
 #torrents #torrent_table td.category a[href$="category=13"] {
-  background: #00a0b0 url(Television.png);
+  background: #00a0b0 url("Icons/Bright/Television.png");
 }
 #torrents #torrent_table td.category a[href$="category=22"],
 #torrents #torrent_table td.category a[href$="category=23"] {
-  background: #edc951 url(Music.png);
+  background: #edc951 url("Icons/Bright/Music.png");
 }
 #torrents #torrent_table td.category a[href$="category=24"],
 #torrents #torrent_table td.category a[href$="category=25"] {
-  background: #eb6841 url(Table-Lamp.png);
+  background: #eb6841 url("Icons/Bright/Table-Lamp.png");
 }
 #torrents #torrent_table td.category a[href$="category=26"],
 #torrents #torrent_table td.category a[href$="category=27"] {
-  background: rgba(237, 201, 81, 0.92) url(Book.png);
+  background: rgba(237, 201, 81, 0.92) url("Icons/Bright/Book.png");
 }
 #torrents #torrent_table td.category a[href$="category=28"],
 #torrents #torrent_table td.category a[href$="category=29"],
 #torrents #torrent_table td.category a[href$="category=30"],
 #torrents #torrent_table td.category a[href$="category=31"] {
-  background: rgba(235, 104, 65, 0.92) url(Computer.png);
+  background: rgba(235, 104, 65, 0.92) url("Icons/Bright/Computer.png");
 }
 #torrents #torrent_table td.category img {
   display: none;
@@ -1360,7 +1360,7 @@ form tr:not(:first-child):hover {
   display: none;
 }
 #torrents #torrent_table td.quickdownload a {
-  background: #cc333f url(Download.png) no-repeat;
+  background: #cc333f url("Icons/Bright/Download.png") no-repeat;
   display: block;
   height: 46px;
   position: relative;
