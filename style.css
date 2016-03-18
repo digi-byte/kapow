@@ -4,7 +4,7 @@
 }
 body {
   background-color: #ececec;
-  color: #fffffa;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
   font-size: 11px;
 }
@@ -174,7 +174,7 @@ ul {
   margin-left: 0;
 }
 #header a {
-  color: #fffffa;
+  color: #fff;
 }
 .avatar ul {
   list-style-type: none;
@@ -211,7 +211,7 @@ td input[type=submit] {
 }
 input[type=button],
 input[type=submit] {
-  color: #fffffa;
+  color: #fff;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   background: #cc333f;
   border: 0;
@@ -227,10 +227,10 @@ input[type=submit]:last-child {
 }
 input[type=button]:hover,
 input[type=submit]:hover {
-  background: rgba(204, 51, 63, 0.92);
+  background: #b82e39;
 }
 #search-button {
-  color: #fffffa;
+  color: #fff;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   background: #cc333f;
   border: 0;
@@ -249,7 +249,7 @@ input[type=checkbox]::after {
   width: 100%;
   height: 100%;
   background: #fcfcfc;
-  color: #222222;
+  color: #2e2e2f;
   line-height: 15px;
   top: 0;
   text-align: center;
@@ -267,7 +267,7 @@ input[type=radio]::after {
   width: 100%;
   height: 100%;
   background: #fcfcfc;
-  color: #222222;
+  color: #2e2e2f;
   line-height: 15px;
   top: 0;
   padding-top: 1px;
@@ -303,7 +303,7 @@ select {
   width: 100%;
 }
 #userinfo a:hover {
-  color: rgba(0, 160, 176, 0.92);
+  color: #008997;
 }
 #userinfo_minor {
   display: flex;
@@ -360,9 +360,6 @@ select {
   order: 3;
   z-index: 5;
 }
-#menu a {
-  color: #B1B1A6;
-}
 #menu ul {
   display: flex;
   align-items: flex-end;
@@ -380,7 +377,7 @@ select {
   justify-content: center;
   padding: 5px 20px 5px 40px;
   transition: all 100ms;
-  color: #fffffa;
+  color: #fff;
   height: 50px;
   align-items: flex-end;
   background-repeat: no-repeat;
@@ -396,7 +393,7 @@ select {
   background-image: url("Icons/Bright/Home.png");
 }
 #menu #nav_torrents a {
-  background-color: rgba(204, 51, 63, 0.92);
+  background-color: #b82e39;
   background-image: url("Icons/Bright/Download.png");
 }
 #menu #nav_forums a {
@@ -404,7 +401,7 @@ select {
   background-image: url("Icons/Bright/Typewriter.png");
 }
 #menu #nav_irc a {
-  background-color: rgba(237, 201, 81, 0.92);
+  background-color: #e9be2c;
   background-image: url("Icons/Bright/Chat.png");
 }
 #menu #nav_wiki a {
@@ -412,9 +409,9 @@ select {
   background-image: url("Icons/Bright/Message-Information.png");
 }
 #menu #nav_donate a {
-  background-color: rgba(0, 160, 176, 0.92);
+  background-color: #008997;
   background-image: url("Icons/Bright/Donate.png");
-  color: #fffffa !important;
+  color: #fff !important;
 }
 #menu #nav_upload a {
   background-color: #eb6841;
@@ -424,7 +421,7 @@ select {
   flex-grow: 0;
 }
 #menu #nav_uploaded a {
-  background-color: rgba(235, 104, 65, 0.92);
+  background-color: #e74b1c;
   background-image: url("Icons/Bright/Uploads.png");
 }
 #menu #nav_requests {
@@ -448,7 +445,7 @@ select {
   margin-top: 15px;
 }
 #donate #content .donation_info_title {
-  color: #0295A4;
+  color: #00a0b0;
   margin: 15px 15px 0;
   font-weight: normal;
   font-size: 19px;
@@ -546,7 +543,7 @@ select {
   font-size: 11px;
 }
 #content .header {
-  color: #0295A4;
+  color: #00a0b0;
   margin: 15px 15px 0;
 }
 #content .header h2 {
@@ -613,7 +610,7 @@ span.time.tooltip {
 .center_poll {
   display: block;
   height: 15px;
-  background: #EB6841;
+  background: #eb6841;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 #footer > * {
@@ -646,7 +643,7 @@ span.time.tooltip {
   border-radius: 0 !important;
   margin-top: 0 !important;
   box-shadow: none !important;
-  color: #fffffa !important;
+  color: #fff !important;
   width: auto !important;
   background: #edc951 !important;
   padding: 15px !important;
@@ -668,7 +665,7 @@ span.time.tooltip {
 }
 #noty_bottomRight_layout_container .brackets {
   margin: 0 15px !important;
-  color: #fffffa !important;
+  color: #fff !important;
 }
 #noty_bottomRight_layout_container .brackets:before {
   content: "" !important;
@@ -726,7 +723,7 @@ form tr:not(:first-child):hover {
   margin-bottom: 30px;
 }
 #forums blockquote {
-  background: #fafafa;
+  background: #f9f9f9;
   padding: 15px;
   font-style: italic;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -913,7 +910,7 @@ form tr:not(:first-child):hover {
   font-weight: normal;
 }
 .breadcrumbs {
-  color: #0295A4;
+  color: #00a0b0;
   margin: 0 15px;
   font-weight: normal;
   order: 1;
@@ -978,7 +975,7 @@ form tr:not(:first-child):hover {
   top: -1px;
 }
 .textboxButton {
-  color: #fffffa;
+  color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
@@ -993,7 +990,7 @@ form tr:not(:first-child):hover {
   margin-left: 0;
 }
 .textboxButton:hover {
-  background: rgba(0, 160, 176, 0.92);
+  background: #008997;
 }
 #textarea_wrap_0,
 #textarea_wrap_1,
@@ -1334,13 +1331,13 @@ form tr:not(:first-child):hover {
 }
 #torrents #torrent_table td.category a[href$="category=26"],
 #torrents #torrent_table td.category a[href$="category=27"] {
-  background: rgba(237, 201, 81, 0.92) url("Icons/Bright/Book.png");
+  background: #e9be2c url("Icons/Bright/Book.png");
 }
 #torrents #torrent_table td.category a[href$="category=28"],
 #torrents #torrent_table td.category a[href$="category=29"],
 #torrents #torrent_table td.category a[href$="category=30"],
 #torrents #torrent_table td.category a[href$="category=31"] {
-  background: rgba(235, 104, 65, 0.92) url("Icons/Bright/Computer.png");
+  background: #e74b1c url("Icons/Bright/Computer.png");
 }
 #torrents #torrent_table td.category img {
   display: none;
@@ -1672,7 +1669,7 @@ form tr:not(:first-child):hover {
   width: auto;
 }
 #tools [name="news_post"] + h2 {
-  color: #0295A4;
+  color: #00a0b0;
   margin: 15px 15px 0;
   font-weight: normal;
   font-size: 15px;
