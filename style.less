@@ -12,12 +12,10 @@
 @color_12: #fff;
 @color_13: darken(#0295A4, 20%);
 @font-family_1: "Open Sans", sans-serif;
-@font-size_1: 26px;
+@font-size_1: 27px;
 @font-size_2: 19px;
 @font-size_3: 15px;
-@font-size_4: 10px;
-
-@font-size_666: 6px;
+@font-size_4: 11px;
 
 @import "https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300,300italic,800,800italic";
 
@@ -35,7 +33,7 @@ body {
 	background-color: #ececec;
 	color: @color_1;
 	font-family: @font-family_1;
-	font-size: @font-size_666;
+	font-size: @font-size_4;
 }
 #settings_sections {
 	position: initial;
@@ -163,7 +161,7 @@ ul {
 			}
 			.label {
 				text-align: left;
-				line-height: @font-size_666;
+				line-height: @font-size_3;
 				float: none;
 				padding: 0 15px 0 0;
 				width: auto;
@@ -174,7 +172,7 @@ ul {
 		background: #ffffff;
 		margin: 15px;
 		color: @color_7;
-		font-size: @font-size_666;
+		font-size: @font-size_3;
 		box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 		width: calc(100% - 30px);
 		padding: 15px;
@@ -447,7 +445,7 @@ select {
 			height: 50px;
 			align-items: flex-end;
 			background-repeat: no-repeat;
-			background-position: center top;
+			background-position: center -2px;
 			padding-left: 20px !important;
 			width: 70px;
 			&:hover {
@@ -566,7 +564,7 @@ select {
 	#content {
 		.thin {
 			>.header {
-				&+p {
+				& + p {
 					font-size: @font-size_2;
 					color: @color_2;
 					input {
@@ -692,37 +690,35 @@ select {
 }
 .colhead {
 	color: @color_8;
-	font-size: 1.8em;
 	font-weight: 400;
-	font-size: 1.3em;
+	font-size: @font-size_2;
 }
 .header {
 	.linkbox {
-		font-size: 1em;
+		font-size: @font-size_4;
 		width: 100%;
 		text-align: center;
 	}
 }
-.header&+.linkbox {
-	font-size: 1em;
+.header + .linkbox {
+	font-size: @font-size_4;
 	width: 100%;
 	text-align: center;
 }
 .linkbox {
 	.brackets {
-		font-size: 1em;
-		font-size: 1em;
+		font-size: @font-size_4;
 	}
 }
 span.time.tooltip {
-	font-size: 0.7em;
+	font-size: @font-size_4;
 }
 .thin {
 	>h3 {
 		padding: 0 15px;
 		font-weight: 400;
 		color: @color_8;
-		font-size: 1.4em;
+		font-size: @font-size_2;
 	}
 }
 .graph {
@@ -733,7 +729,7 @@ span.time.tooltip {
 }
 .center_poll {
 	display: block;
-	height: 1em;
+	height: @font-size_3;
 	background: #EB6841;
 	box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
@@ -771,7 +767,7 @@ span.time.tooltip {
 #noty_bottomRight_layout_container {
 	bottom: 0 !important;
 	right: 0 !important;
-	font-size: 1.5em !important;
+	font-size: @font-size_3 !important;
 	width: 100% !important;
 	>li {
 		border: 0 !important;
@@ -789,7 +785,7 @@ span.time.tooltip {
 		width: 100% !important;
 	}
 	.noty_message {
-		font-size: 1em !important;
+		font-size: @font-size_3 !important;
 		line-height: normal !important;
 		padding: 0 !important;
 	}
@@ -878,7 +874,7 @@ form {
 			text-align: center;
 		}
 		.breadcrumbs {
-			&+.linkbox {
+			& + .linkbox {
 				margin-bottom: 30px;
 			}
 		}
@@ -908,7 +904,7 @@ form {
 		&:not(.preview_wrap) {
 			.floatRight {
 				input {
-					font-size: 1em;
+					font-size: @font-size_3;
 				}
 				position: absolute;
 				bottom: 0;
@@ -920,12 +916,15 @@ form {
 		}
 	}
 	#preview_wrap_0 {
-		margin: 0 0 27px;
+		background: transparent;
+        box-shadow: none;
+        padding: 0;
+        margin: 0 0 27px;
 		border-spacing: 0;
 		position: relative;
 		&:before {
 			content: "Preview";
-			font-size: 1.5em;
+			font-size: @font-size_2;
 			color: @color_2;
 			position: absolute;
 			top: -20px;
@@ -942,7 +941,7 @@ form {
 		background: #ffffff;
 		margin: 15px;
 		color: @color_7;
-		font-size: 1.3em;
+		font-size: @font-size_3;
 		padding: 15px;
 		box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 	}
@@ -957,14 +956,15 @@ form {
 		}
 	}
 	.header {
-		&+.linkbox {
+		& + .linkbox {
 			>.center {
 				margin-bottom: 15px;
 			}
 		}
 	}
-	#thread_notes&+a {
+	#thread_notes+a {
 		text-align: center;
+        
 	}
 	#thread_notes_table {
 		#textarea_wrap_1 {
@@ -974,18 +974,18 @@ form {
 			margin-bottom: 15px;
 		}
 	}
-	#thread_notes&+a&+form {
+	#thread_notes + a + form {
 		input[type="submit"] {
 			margin-left: 15px;
 			margin-right: 0;
-			font-size: 1em;
+			font-size: @font-size_3;
 		}
 	}
-	#thread_notes&+a&+form&+br&+h3&+form {
+	#thread_notes + a + form + br + h3 +form {
 		input[type="submit"] {
 			margin-left: 15px;
 			margin-right: 0;
-			font-size: 1em;
+			font-size: @font-size_3;
 		}
 	}
 	#searchforum {
@@ -994,13 +994,13 @@ form {
 			background: #ffffff;
 			margin: 15px;
 			color: @color_7;
-			font-size: 1.3em;
+			font-size: @font-size_3;
 			padding: 15px;
 			box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 		}
 		h3 {
 			margin-top: 15px;
-			font-size: 1.5em;
+			font-size: @font-size_2;
 			font-weight: normal;
 			color: @color_2;
 		}
@@ -1042,10 +1042,10 @@ form {
 				}
 			}
 		}
-		&+.linkbox {
-			&+h3 {
+		& + .linkbox {
+			& + h3 {
 				margin-bottom: 15px;
-				&+.boxOuter {
+				& + .boxOuter {
 					.forum_list {
 						margin-top: 0;
 						tr {
@@ -1091,7 +1091,7 @@ form {
 		#answer_block {
 			br {
 				display: none;
-				&+input[type="text"] {
+				& + input[type="text"] {
 					margin-top: 15px;
 				}
 			}
@@ -1170,7 +1170,7 @@ form {
 	}
 	margin-top: -25px;
 	textarea {
-		font-size: 1.3em;
+		font-size: @font-size_3;
 	}
 	.textboxContainer {
         ~ br {
@@ -1184,8 +1184,8 @@ form {
 		text-align: right;
 		>input[type=checkbox] {
 			display: none;
-			&+label {
-				font-size: 1.3em;
+			& + label {
+				font-size: @font-size_3;
 				padding-left: 25px;
 				position: relative;
 				color: @color_2;
@@ -1202,10 +1202,10 @@ form {
 				}
 			}
 			&:checked {
-				&+label {
+				& + label {
 					&:after {
 						content: "\2713";
-						font-size: 1em;
+						font-size: @font-size_3;
 						color: @color_3;
 						position: absolute;
 						left: 5px;
@@ -1223,7 +1223,7 @@ form {
 	color: @color_1;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 1;
+	font-size: @font-size_3;
 	flex-grow: 1;
 	margin-left: 15px;
 	padding: 5px;
@@ -1266,7 +1266,7 @@ form {
 }
 #searchthread {
 	h3 {
-		font-size: 1.5em;
+		font-size: @font-size_2;
 		font-weight: normal;
 		color: @color_2;
 	}
@@ -1316,14 +1316,14 @@ form {
 		>.boxOuter {
 			.head {
 				margin-bottom: 5px;
-				font-size: 1.5em;
+				font-size: @font-size_2;
 				color: @color_8;
 			}
 			.box_info {
 				strong {
 					color: @color_8;
 					font-weight: normal;
-					font-size: 1.3em;
+					font-size: @font-size_3;
 				}
 				ul {
 					list-style: none;
@@ -1340,7 +1340,7 @@ form {
 			}
 		}
 		span.time.tooltip {
-			font-size: 1em;
+			font-size: @font-size_3;
 		}
 		.add_form {
 			display: flex;
@@ -1368,7 +1368,7 @@ form {
 		}
 		.boxOuter {
 			margin: 0;
-			font-size: 1em;
+			font-size: @font-size_3;
 		}
 		.boxOuter.preview_wrap {
 			margin-bottom: 15px;
@@ -1394,7 +1394,7 @@ form {
 			}
 			.boxOuter {
 				margin: 0;
-				font-size: 1em;
+				font-size: @font-size_3;
 			}
 			.boxOuter.preview_wrap {
 				margin-bottom: 15px;
@@ -1422,7 +1422,7 @@ form {
 		br {
 			display: none;
 		}
-		br&+.header {
+		br + .header {
 			display: none;
 		}
 	}
@@ -1447,7 +1447,7 @@ form {
 			}
 		}
 	}
-	select&+select {
+	select + select {
 		margin-top: 15px;
 	}
 	td.label {
@@ -1461,11 +1461,15 @@ form {
 			background: #ffffff;
 			margin: 15px;
 			color: @color_7;
-			font-size: 1.3em;
+			font-size: @font-size_3;
 			padding: 15px;
 			box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 			td {
 				width: auto;
+                
+                .tooltip {
+                    font-size: @font-size_3;
+                }
 			}
 			tr {
 				&:last-of-type {
@@ -1504,7 +1508,7 @@ form {
 			display: none;
 		}
 		>strong {
-			font-size: 1.4em;
+			font-size: @font-size_2;
 			font-weight: normal;
 			display: block;
 			margin-bottom: 15px;
@@ -1519,7 +1523,7 @@ form {
 		}
 	}
 	.preview_wrap {
-		font-size: 1em;
+		font-size: @font-size_3;
 		margin: 0 0 15px;
 	}
 }
@@ -1568,7 +1572,7 @@ form {
 			border-collapse: collapse;
 			width: 100%;
 			.colhead_dark {
-				font-size: 1.3em;
+				font-size: @font-size_2;
 				td {
 					text-align: center;
 					&:nth-child(2) {
@@ -1608,7 +1612,7 @@ form {
 					position: absolute;
 					color: @color_12;
 					bottom: 5px;
-					font-size: 0.8em;
+					font-size: @font-size_4;
 					text-align: center;
 					width: 100%;
                     content: attr(data-category);
@@ -1682,12 +1686,12 @@ form {
 				padding: 0 15px;
 				font-weight: 400;
 				color: @color_8;
-				font-size: 1.4em;
+				font-size: @font-size_3;
 				padding: 15px 0;
 				a {
 					display: block;
 					margin-top: 10px;
-					font-size: 0.72em;
+					font-size: @font-size_4;
 				}
 			}
 		}
@@ -1700,14 +1704,14 @@ form {
 				display: none;
 			}
 		}
-		>.header&+br {
+		>.header + br {
 			display: none;
 		}
 		>.center {
 			padding: 0 15px;
 			font-weight: 400;
 			color: @color_8;
-			font-size: 1.4em;
+			font-size: @font-size_2;
 			margin: 15px 0;
 		}
 	}
@@ -1718,7 +1722,7 @@ form {
 				span {
 					&:last-child {
 						margin-left: 15px;
-						line-height: 1.3em;
+						line-height: @font-size_3;
 					}
 				}
 			}
@@ -1760,10 +1764,10 @@ form {
 		>h2 {
 			color: @color_2;
 			font-weight: normal;
-			font-size: 1.5em;
+			font-size: @font-size_2;
 			margin: 15px 15px 0;
 		}
-		>h2&+.linkbox {
+		>h2 + .linkbox {
 			width: 100%;
 			text-align: center;
 		}
@@ -1784,7 +1788,7 @@ form {
 			margin-bottom: 15px;
 		}
 	}
-	form[name="reply"]&+h3&+form {
+	form[name="reply"] + h3 + form {
 		table {
 			display: block;
 		}
@@ -1793,7 +1797,7 @@ form {
 			justify-content: space-between;
 		}
 		input[type="submit"] {
-			font-size: 1em;
+			font-size: @font-size_3;
 		}
 		tr {
 			&:hover {
@@ -1802,8 +1806,8 @@ form {
 			&:first-child {
 				display: flex;
 				td {
-					line-height: 1em;
-					padding-top: 1em;
+					line-height: @font-size_3;
+					padding-top: @font-size_3;
 					&:nth-child(1) {
 						order: 2;
 					}
@@ -1835,7 +1839,7 @@ form {
 		margin: 0;
 		h3 {
 			margin: 15px 0;
-			font-size: 1.3em;
+			font-size: @font-size_3;
 			&:first-child {
 				margin-top: 0;
 			}
@@ -1851,7 +1855,7 @@ form {
 	}
 	form[name="forward"] {
 		input[type="submit"] {
-			font-size: 1em;
+			font-size: @font-size_3;
 		}
 		.box.pad {
 			display: flex;
@@ -1867,11 +1871,11 @@ form {
 		display: flex;
 		strong {
 			color: @color_7;
-			font-size: 1.3em;
+			font-size: @font-size_3;
 		}
 		.floatRight {
 			margin-left: 5px;
-			font-size: 0.8em;
+			font-size: @font-size_4;
 			align-self: center;
 		}
 	}
@@ -1884,7 +1888,7 @@ form {
 		padding: 0 15px;
 		font-weight: 400;
 		color: @color_8;
-		font-size: 1.4em;
+		font-size: @font-size_2;
 	}
 	.header {
 		margin-bottom: 15px;
@@ -1924,7 +1928,7 @@ form {
 			margin-left: 15px;
 		}
 		.colhead {
-			font-size: 1em;
+			font-size: @font-size_3;
 			.floatLeft {
 				float: none;
 				margin-right: 10px;
@@ -1944,22 +1948,22 @@ form {
 			padding: 0 15px;
 			font-weight: 400;
 			color: @color_8;
-			font-size: 1.4em;
+			font-size: @font-size_2;
 		}
 		>table {
 			background: #ffffff;
 			margin: 15px 15px 0;
 			color: @color_7;
-			font-size: 1.3em;
+			font-size: @font-size_3;
 			box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-			width: calc(100% - 30px);
+			width: ~"calc(100% - 30px)";
 			padding: 15px;
 		}
 	}
 	#report_form {
 		input[type="submit"] {
 			float: right;
-			font-size: 1em;
+			font-size: @font-size_3;
 		}
 	}
 }
@@ -2044,11 +2048,11 @@ form {
 				width: auto;
 			}
 		}
-		&+h2 {
+		& + h2 {
 			color: @color_9;
 			margin: 15px 15px 0;
 			font-weight: normal;
-			font-size: 1.5em;
+			font-size: @font-size_3;
 			width: 100%;
 		}
 	}

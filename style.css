@@ -7,7 +7,7 @@ body {
   background-color: #ececec;
   color: #fffffa;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.70em;
+  font-size: 11px;
 }
 body:not(#user) #lightbox,
 body:not(#user) #curtain {
@@ -44,7 +44,7 @@ ul {
   width: 100%;
 }
 #user .sidebar .time.tooltip {
-  font-size: 1em;
+  font-size: 11px;
 }
 #user .edit_form .main_column {
   margin-right: 0;
@@ -61,12 +61,12 @@ ul {
   width: 300px;
 }
 #user #settings_sections strong {
-  font-size: 1.3em;
+  font-size: 19px;
   font-weight: normal;
 }
 #user #settings_sections h2 {
   font-weight: normal;
-  font-size: 1em;
+  font-size: 15px;
 }
 #user #settings_sections li {
   padding-top: 15px;
@@ -84,7 +84,7 @@ ul {
   border-spacing: 0;
 }
 #user .user_options tbody tr:first-child strong {
-  font-size: 1.3em;
+  font-size: 19px;
   font-weight: normal;
 }
 #user .user_options td.label strong {
@@ -96,7 +96,7 @@ ul {
 #user .preview_wrap {
   background: #fcfcfc;
   margin: 0;
-  font-size: 1em;
+  font-size: 15px;
   margin-bottom: 15px;
 }
 #user #personal_settings .submit_div {
@@ -120,7 +120,7 @@ ul {
 }
 #user #user_invite .field_div .label {
   text-align: left;
-  line-height: 2em;
+  line-height: 15px;
   float: none;
   padding: 0 15px 0 0;
   width: auto;
@@ -129,7 +129,7 @@ ul {
   background: #ffffff;
   margin: 15px;
   color: #a0a0a0;
-  font-size: 1.3em;
+  font-size: 15px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   width: calc(70%);
   padding: 15px;
@@ -210,37 +210,23 @@ td {
 td input[type=submit] {
   float: right;
 }
-input[type=button] {
-  color: #fffffa;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background: #cc333f;
-  border: 0;
-  font-size: 1em;
-  padding: 5px 15px;
-  margin-right: 15px;
-  margin-bottom: 1px;
-  cursor: pointer;
-}
-input[type=button]:last-child {
-  margin-right: 0;
-}
-input[type=button]:hover {
-  background: rgba(204, 51, 63, 0.92);
-}
+input[type=button],
 input[type=submit] {
   color: #fffffa;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   background: #cc333f;
   border: 0;
-  font-size: 1em;
+  font-size: 15px;
   padding: 5px 15px;
   margin-right: 15px;
   margin-bottom: 1px;
   cursor: pointer;
 }
+input[type=button]:last-child,
 input[type=submit]:last-child {
   margin-right: 0;
 }
+input[type=button]:hover,
 input[type=submit]:hover {
   background: rgba(204, 51, 63, 0.92);
 }
@@ -249,7 +235,7 @@ input[type=submit]:hover {
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   background: #cc333f;
   border: 0;
-  font-size: 1em;
+  font-size: 15px;
   padding: 5px 15px;
   margin-right: 15px;
   margin-bottom: 1px;
@@ -265,7 +251,7 @@ input[type=checkbox]::after {
   height: 100%;
   background: #fcfcfc;
   color: #222222;
-  line-height: 1em;
+  line-height: 15px;
   top: 0;
   text-align: center;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -283,7 +269,7 @@ input[type=radio]::after {
   height: 100%;
   background: #fcfcfc;
   color: #222222;
-  line-height: 1em;
+  line-height: 15px;
   top: 0;
   padding-top: 1px;
   box-sizing: border-box;
@@ -294,75 +280,15 @@ input[type=radio]::after {
 input[type=radio]:checked::after {
   content: "·";
 }
-input[type=text] {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  width: 100%;
-  border: 0;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
-  padding: 5px;
-  box-sizing: border-box;
-  min-width: 60px;
-}
-input[type=number] {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  width: 100%;
-  border: 0;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
-  padding: 5px;
-  box-sizing: border-box;
-  min-width: 60px;
-}
-input[type=password] {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  width: 100%;
-  border: 0;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
-  padding: 5px;
-  box-sizing: border-box;
-  min-width: 60px;
-}
-input[type=search] {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  width: 100%;
-  border: 0;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
-  padding: 5px;
-  box-sizing: border-box;
-  min-width: 60px;
-}
-input[type=email] {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  width: 100%;
-  border: 0;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
-  padding: 5px;
-  box-sizing: border-box;
-  min-width: 60px;
-}
-textarea {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1em;
-  width: 100%;
-  border: 0;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  background-color: #fcfcfc;
-  padding: 5px;
-  box-sizing: border-box;
-  min-width: 60px;
-}
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=email],
+textarea,
 select {
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: 15px;
   width: 100%;
   border: 0;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -405,7 +331,6 @@ select {
   background: no-repeat center top url("logo.jpg");
   background-size: cover;
   opacity: 0.5;
-  font-size: 6em;
   height: 160px;
   margin-bottom: -38px;
   order: 2;
@@ -420,9 +345,9 @@ select {
   border: 2px solid #ffffff;
   top: 10px;
   left: 10px;
-  font-size: 0.13em;
+  font-size: 11px;
   padding: 2px;
-  border-radius: 1.2em;
+  border-radius: 12px;
   opacity: 0.2;
 }
 #logo a {
@@ -432,7 +357,7 @@ select {
 }
 #menu {
   display: flex;
-  font-size: 1.3em;
+  font-size: 15px;
   order: 3;
   z-index: 5;
 }
@@ -460,7 +385,7 @@ select {
   height: 50px;
   align-items: flex-end;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center -2px;
   padding-left: 20px !important;
   width: 70px;
 }
@@ -527,7 +452,7 @@ select {
   color: #0295A4;
   margin: 15px 15px 0;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 19px;
   width: 100%;
 }
 #donate #content .donateOption {
@@ -548,13 +473,13 @@ select {
   border-bottom-width: 5px;
 }
 #upload #content .thin > .header + p {
-  font-size: 1.5em;
+  font-size: 19px;
   color: #00a0b0;
 }
 #upload #content .thin > .header + p input {
   margin: 15px 15px 0;
-  font-size: 0.7em;
-  max-width: 500px;
+  font-size: 15px;
+  max-width: 600px;
   text-align: center;
 }
 #upload .create_form tr:hover {
@@ -605,9 +530,10 @@ select {
   display: none;
 }
 #searchbars input {
+  background-color: transparent;
   border: 0;
-  font-size: 1.5em;
-  padding: 2px;
+  font-size: 15px;
+  padding: 4px;
   width: 200px;
 }
 #searchbars input:focus {
@@ -618,7 +544,7 @@ select {
   flex-direction: column;
 }
 #content .boxOuter .brackets {
-  font-size: 0.7em;
+  font-size: 11px;
 }
 #content .header {
   color: #0295A4;
@@ -626,11 +552,11 @@ select {
 }
 #content .header h2 {
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 19px;
 }
 #content .header h3 {
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 19px;
 }
 .main_column {
   order: 1;
@@ -643,42 +569,41 @@ select {
   background: #ffffff;
   margin: 15px;
   color: #a0a0a0;
-  font-size: 1.3em;
+  font-size: 15px;
   padding: 15px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .head strong {
   color: #7a7a7a;
-  font-size: 1.8em;
+  font-size: 27px;
   font-weight: 400;
 }
 .colhead {
   color: #7a7a7a;
-  font-size: 1.8em;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 19px;
 }
 .header .linkbox {
-  font-size: 1em;
+  font-size: 11px;
   width: 100%;
   text-align: center;
 }
 .header + .linkbox {
-  font-size: 1em;
+  font-size: 11px;
   width: 100%;
   text-align: center;
 }
 .linkbox .brackets {
-  font-size: 1em;
+  font-size: 11px;
 }
 span.time.tooltip {
-  font-size: 0.7em;
+  font-size: 11px;
 }
 .thin > h3 {
   padding: 0 15px;
   font-weight: 400;
   color: #7a7a7a;
-  font-size: 1.4em;
+  font-size: 19px;
 }
 .graph {
   margin: 15px 0;
@@ -688,7 +613,7 @@ span.time.tooltip {
 }
 .center_poll {
   display: block;
-  height: 1em;
+  height: 15px;
   background: #EB6841;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -714,7 +639,7 @@ span.time.tooltip {
 #noty_bottomRight_layout_container {
   bottom: 0 !important;
   right: 0 !important;
-  font-size: 1.5em !important;
+  font-size: 15px !important;
   width: 100% !important;
 }
 #noty_bottomRight_layout_container > li {
@@ -733,7 +658,7 @@ span.time.tooltip {
   width: 100% !important;
 }
 #noty_bottomRight_layout_container .noty_message {
-  font-size: 1em !important;
+  font-size: 15px !important;
   line-height: normal !important;
   padding: 0 !important;
 }
@@ -824,19 +749,22 @@ form tr:not(:first-child):hover {
   right: 0;
 }
 #forums .forum_post:not(.preview_wrap) .floatRight input {
-  font-size: 1em;
+  font-size: 15px;
 }
 #forums .forum_post:not(.preview_wrap) form {
   margin-bottom: 30px;
 }
 #forums #preview_wrap_0 {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
   margin: 0 0 27px;
   border-spacing: 0;
   position: relative;
 }
 #forums #preview_wrap_0:before {
   content: "Preview";
-  font-size: 1.5em;
+  font-size: 19px;
   color: #00a0b0;
   position: absolute;
   top: -20px;
@@ -852,7 +780,7 @@ form tr:not(:first-child):hover {
   background: #ffffff;
   margin: 15px;
   color: #a0a0a0;
-  font-size: 1.3em;
+  font-size: 15px;
   padding: 15px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
@@ -865,7 +793,7 @@ form tr:not(:first-child):hover {
 #forums .header + .linkbox > .center {
   margin-bottom: 15px;
 }
-#thread_notes#forums + a {
+#forums #thread_notes + a {
   text-align: center;
 }
 #forums #thread_notes_table #textarea_wrap_1 {
@@ -874,15 +802,15 @@ form tr:not(:first-child):hover {
 #forums #thread_notes_table .textboxContainer {
   margin-bottom: 15px;
 }
-#thread_notes#forums + a#forums + form input[type="submit"] {
+#forums #thread_notes + a + form input[type="submit"] {
   margin-left: 15px;
   margin-right: 0;
-  font-size: 1em;
+  font-size: 15px;
 }
-#thread_notes#forums + a#forums + form#forums + br#forums + h3#forums + form input[type="submit"] {
+#forums #thread_notes + a + form + br + h3 + form input[type="submit"] {
   margin-left: 15px;
   margin-right: 0;
-  font-size: 1em;
+  font-size: 15px;
 }
 #forums #searchforum {
   margin-bottom: 0;
@@ -891,13 +819,13 @@ form tr:not(:first-child):hover {
   background: #ffffff;
   margin: 15px;
   color: #a0a0a0;
-  font-size: 1.3em;
+  font-size: 15px;
   padding: 15px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 #forums #searchforum h3 {
   margin-top: 15px;
-  font-size: 1.5em;
+  font-size: 19px;
   font-weight: normal;
   color: #00a0b0;
 }
@@ -1011,7 +939,7 @@ form tr:not(:first-child):hover {
   margin: 0 15px 15px;
 }
 #quickpostform textarea {
-  font-size: 1.3em;
+  font-size: 15px;
 }
 #quickpostform .textboxContainer ~ br {
   display: none;
@@ -1026,7 +954,7 @@ form tr:not(:first-child):hover {
   display: none;
 }
 #quickpostform .preview_submit > input[type=checkbox] + label {
-  font-size: 1.3em;
+  font-size: 15px;
   padding-left: 25px;
   position: relative;
   color: #00a0b0;
@@ -1044,7 +972,7 @@ form tr:not(:first-child):hover {
 }
 #quickpostform .preview_submit > input[type=checkbox]:checked + label:after {
   content: "\2713";
-  font-size: 1em;
+  font-size: 15px;
   color: #cc333f;
   position: absolute;
   left: 5px;
@@ -1054,7 +982,7 @@ form tr:not(:first-child):hover {
   color: #fffffa;
   cursor: pointer;
   display: inline-block;
-  font-size: 1;
+  font-size: 15px;
   flex-grow: 1;
   margin-left: 15px;
   padding: 5px;
@@ -1099,7 +1027,7 @@ form tr:not(:first-child):hover {
   display: flex;
 }
 #searchthread h3 {
-  font-size: 1.5em;
+  font-size: 19px;
   font-weight: normal;
   color: #00a0b0;
 }
@@ -1131,13 +1059,13 @@ form tr:not(:first-child):hover {
 }
 #wiki .sidebar > .boxOuter .head {
   margin-bottom: 5px;
-  font-size: 1.5em;
+  font-size: 19px;
   color: #7a7a7a;
 }
 #wiki .sidebar > .boxOuter .box_info strong {
   color: #7a7a7a;
   font-weight: normal;
-  font-size: 1.3em;
+  font-size: 15px;
 }
 #wiki .sidebar > .boxOuter .box_info ul {
   list-style: none;
@@ -1150,7 +1078,7 @@ form tr:not(:first-child):hover {
   margin-top: 0px;
 }
 #wiki .sidebar span.time.tooltip {
-  font-size: 1em;
+  font-size: 15px;
 }
 #wiki .sidebar .add_form {
   display: flex;
@@ -1172,7 +1100,7 @@ form tr:not(:first-child):hover {
 }
 #wiki .edit_form .boxOuter {
   margin: 0;
-  font-size: 1em;
+  font-size: 15px;
 }
 #wiki .edit_form .boxOuter.preview_wrap {
   margin-bottom: 15px;
@@ -1191,7 +1119,7 @@ form tr:not(:first-child):hover {
 }
 #wiki #wiki_create .create_form .boxOuter {
   margin: 0;
-  font-size: 1em;
+  font-size: 15px;
 }
 #wiki #wiki_create .create_form .boxOuter.preview_wrap {
   margin-bottom: 15px;
@@ -1214,7 +1142,7 @@ form tr:not(:first-child):hover {
 #wiki #wiki_browse br {
   display: none;
 }
-br#wiki #wiki_browse + .header {
+#wiki #wiki_browse br + .header {
   display: none;
 }
 #wiki table {
@@ -1230,7 +1158,7 @@ br#wiki #wiki_browse + .header {
 #wiki tr:not(:first-child):hover {
   background: #f9f9f9;
 }
-select#wiki + select {
+#wiki select + select {
   margin-top: 15px;
 }
 #wiki td.label strong {
@@ -1241,12 +1169,15 @@ select#wiki + select {
   background: #ffffff;
   margin: 15px;
   color: #a0a0a0;
-  font-size: 1.3em;
+  font-size: 15px;
   padding: 15px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 #wiki .thin > form td {
   width: auto;
+}
+#wiki .thin > form td .tooltip {
+  font-size: 15px;
 }
 #wiki .thin > form tr:last-of-type:hover {
   background: none;
@@ -1272,7 +1203,7 @@ select#wiki + select {
   display: none;
 }
 #staff .send_form > strong {
-  font-size: 1.4em;
+  font-size: 19px;
   font-weight: normal;
   display: block;
   margin-bottom: 15px;
@@ -1286,7 +1217,7 @@ select#wiki + select {
   width: auto;
 }
 #staff .preview_wrap {
-  font-size: 1em;
+  font-size: 15px;
   margin: 0 0 15px;
 }
 #torrents #searchtorrents {
@@ -1335,7 +1266,7 @@ select#wiki + select {
   width: 100%;
 }
 #torrents #torrent_table > table .colhead_dark {
-  font-size: 1.3em;
+  font-size: 19px;
 }
 #torrents #torrent_table > table .colhead_dark td {
   text-align: center;
@@ -1371,7 +1302,7 @@ select#wiki + select {
   position: absolute;
   color: #fff;
   bottom: 5px;
-  font-size: 0.8em;
+  font-size: 11px;
   text-align: center;
   width: 100%;
   content: attr(data-category);
@@ -1440,25 +1371,25 @@ select#wiki + select {
   padding: 0 15px;
   font-weight: 400;
   color: #7a7a7a;
-  font-size: 1.4em;
+  font-size: 15px;
   padding: 15px 0;
 }
 #torrents .thin.widethin > table.layout td a {
   display: block;
   margin-top: 10px;
-  font-size: 0.72em;
+  font-size: 11px;
 }
 #userhistory .thin > .header br {
   display: none;
 }
- > .header#userhistory .thin + br {
+#userhistory .thin > .header + br {
   display: none;
 }
 #userhistory .thin > .center {
   padding: 0 15px;
   font-weight: 400;
   color: #7a7a7a;
-  font-size: 1.4em;
+  font-size: 19px;
   margin: 15px 0;
 }
 #userhistory .forum_post {
@@ -1466,7 +1397,7 @@ select#wiki + select {
 }
 #userhistory .forum_post tr:first-child span:last-child {
   margin-left: 15px;
-  line-height: 1.3em;
+  line-height: 15px;
 }
 #inbox form td {
   width: auto;
@@ -1497,10 +1428,10 @@ select#wiki + select {
 #inbox .thin > h2 {
   color: #00a0b0;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 19px;
   margin: 15px 15px 0;
 }
- > h2#inbox .thin + .linkbox {
+#inbox .thin > h2 + .linkbox {
   width: 100%;
   text-align: center;
 }
@@ -1516,45 +1447,45 @@ select#wiki + select {
 #inbox form[name="reply"] #preview {
   margin-bottom: 15px;
 }
-form[name="reply"]#inbox + h3#inbox + form table {
+#inbox form[name="reply"] + h3 + form table {
   display: block;
 }
-form[name="reply"]#inbox + h3#inbox + form tbody {
+#inbox form[name="reply"] + h3 + form tbody {
   display: flex;
   justify-content: space-between;
 }
-form[name="reply"]#inbox + h3#inbox + form input[type="submit"] {
-  font-size: 1em;
+#inbox form[name="reply"] + h3 + form input[type="submit"] {
+  font-size: 15px;
 }
-form[name="reply"]#inbox + h3#inbox + form tr:hover {
+#inbox form[name="reply"] + h3 + form tr:hover {
   background: none;
 }
-form[name="reply"]#inbox + h3#inbox + form tr:first-child {
+#inbox form[name="reply"] + h3 + form tr:first-child {
   display: flex;
 }
-form[name="reply"]#inbox + h3#inbox + form tr:first-child td {
-  line-height: 1em;
-  padding-top: 1em;
+#inbox form[name="reply"] + h3 + form tr:first-child td {
+  line-height: 15px;
+  padding-top: 15px;
 }
-form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(1) {
+#inbox form[name="reply"] + h3 + form tr:first-child td:nth-child(1) {
   order: 2;
 }
-form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(2) {
+#inbox form[name="reply"] + h3 + form tr:first-child td:nth-child(2) {
   order: 1;
   padding-right: 5px;
 }
-form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(3) {
+#inbox form[name="reply"] + h3 + form tr:first-child td:nth-child(3) {
   order: 4;
 }
-form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(4) {
+#inbox form[name="reply"] + h3 + form tr:first-child td:nth-child(4) {
   padding-left: 15px;
   padding-right: 5px;
   order: 3;
 }
-form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(5) {
+#inbox form[name="reply"] + h3 + form tr:first-child td:nth-child(5) {
   order: 6;
 }
-form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(6) {
+#inbox form[name="reply"] + h3 + form tr:first-child td:nth-child(6) {
   padding-left: 15px;
   padding-right: 5px;
   order: 5;
@@ -1564,7 +1495,7 @@ form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(6) {
 }
 #inbox #messageform.send_form h3 {
   margin: 15px 0;
-  font-size: 1.3em;
+  font-size: 15px;
 }
 #inbox #messageform.send_form h3:first-child {
   margin-top: 0;
@@ -1576,7 +1507,7 @@ form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(6) {
   margin-right: 0;
 }
 #inbox form[name="forward"] input[type="submit"] {
-  font-size: 1em;
+  font-size: 15px;
 }
 #inbox form[name="forward"] .box.pad {
   display: flex;
@@ -1592,11 +1523,11 @@ form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(6) {
 }
 #inbox .head strong {
   color: #a0a0a0;
-  font-size: 1.3em;
+  font-size: 15px;
 }
 #inbox .head .floatRight {
   margin-left: 5px;
-  font-size: 0.8em;
+  font-size: 11px;
   align-self: center;
 }
 #reportsv2 .thin.float_clear {
@@ -1606,7 +1537,7 @@ form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(6) {
   padding: 0 15px;
   font-weight: 400;
   color: #7a7a7a;
-  font-size: 1.4em;
+  font-size: 19px;
 }
 #reportsv2 .header {
   margin-bottom: 15px;
@@ -1641,7 +1572,7 @@ form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(6) {
   margin-left: 15px;
 }
 #friends .friends_table .colhead {
-  font-size: 1em;
+  font-size: 15px;
 }
 #friends .friends_table .colhead .floatLeft {
   float: none;
@@ -1657,20 +1588,20 @@ form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(6) {
   padding: 0 15px;
   font-weight: 400;
   color: #7a7a7a;
-  font-size: 1.4em;
+  font-size: 19px;
 }
 #reports .thin > table {
   background: #ffffff;
   margin: 15px 15px 0;
   color: #a0a0a0;
-  font-size: 1.3em;
+  font-size: 15px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  width: calc(70%);
+  width: calc(100% - 30px);
   padding: 15px;
 }
 #reports #report_form input[type="submit"] {
   float: right;
-  font-size: 1em;
+  font-size: 15px;
 }
 #tools .add_form .rowa td {
   display: flex;
@@ -1745,6 +1676,6 @@ form[name="reply"]#inbox + h3#inbox + form tr:first-child td:nth-child(6) {
   color: #0295A4;
   margin: 15px 15px 0;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 15px;
   width: 100%;
 }
