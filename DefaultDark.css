@@ -150,7 +150,7 @@ ul {
   background: none;
 }
 #user #filter_form tr:first-child:hover {
-  background: #f9f9f9;
+  background: #3f3f3f;
 }
 .sidebar {
   order: 2;
@@ -481,7 +481,7 @@ select {
   text-align: center;
 }
 #upload .create_form tr:hover {
-  background: #f9f9f9;
+  background: #3f3f3f;
 }
 #upload .create_form tr > td {
   padding: 7px 0 8px;
@@ -687,7 +687,7 @@ form td:first-child {
   width: 20%;
 }
 form tr:not(:first-child):hover {
-  background: #f9f9f9;
+  background: #3f3f3f;
 }
 .tooltipster-base {
   display: none !important;
@@ -725,7 +725,7 @@ form tr:not(:first-child):hover {
   margin-bottom: 30px;
 }
 #forums blockquote {
-  background: #f9f9f9;
+  background: #3f3f3f;
   padding: 15px;
   font-style: italic;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -852,7 +852,7 @@ form tr:not(:first-child):hover {
   margin-top: 0;
 }
 #forums .search_form + .linkbox + h3 + .boxOuter .forum_list tr:not(:first-child):hover {
-  background: #f9f9f9;
+  background: #3f3f3f;
 }
 #forums .search_form + .linkbox + h3 + .boxOuter .forum_list td {
   padding: 3px 0;
@@ -1154,7 +1154,7 @@ form tr:not(:first-child):hover {
   padding-top: 0;
 }
 #wiki tr:not(:first-child):hover {
-  background: #f9f9f9;
+  background: #3f3f3f;
 }
 #wiki select + select {
   margin-top: 15px;
@@ -1283,7 +1283,7 @@ form tr:not(:first-child):hover {
   padding: 5px;
 }
 #torrents #torrent_table tr:not(:first-child):hover {
-  background: #f9f9f9;
+  background: #3f3f3f;
 }
 #torrents #torrent_table td.category {
   width: 110px;
