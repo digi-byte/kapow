@@ -510,7 +510,7 @@ select {
   width: 100%;
 }
 #searchbars li {
-  background: no-repeat left -2px url("Icons/Dark/Search.png");
+  background: no-repeat left -2px url("Icons/Grey/Search.png");
   display: flex;
   overflow: hidden;
   padding-left: 48px;
