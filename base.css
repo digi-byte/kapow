@@ -89,6 +89,9 @@ ul {
   font-size: 19px;
   font-weight: normal;
 }
+#user .user_options tbody tr td .warning {
+  color: inherit;
+}
 #user .user_options td.label strong {
   font-weight: normal;
 }
@@ -332,7 +335,6 @@ select {
 #logo {
   background: no-repeat center top url("Images/Default/logo.jpg");
   background-size: cover;
-  opacity: 0.5;
   height: 160px;
   margin-bottom: -38px;
   order: 2;
@@ -393,46 +395,46 @@ select {
 }
 #menu #nav_index a {
   background-color: #cc333f;
-  background-image: url("Icons/Bright/Home.png");
+  background-image: url("Icons/White/Home.png");
 }
 #menu #nav_torrents a {
   background-color: #b82e39;
-  background-image: url("Icons/Bright/Download.png");
+  background-image: url("Icons/White/Download.png");
 }
 #menu #nav_forums a {
   background-color: #edc951;
-  background-image: url("Icons/Bright/Typewriter.png");
+  background-image: url("Icons/White/Typewriter.png");
 }
 #menu #nav_irc a {
   background-color: #e9be2c;
-  background-image: url("Icons/Bright/Chat.png");
+  background-image: url("Icons/White/Chat.png");
 }
 #menu #nav_wiki a {
   background-color: #00a0b0;
-  background-image: url("Icons/Bright/Message-Information.png");
+  background-image: url("Icons/White/Message-Information.png");
 }
 #menu #nav_donate a {
   background-color: #008997;
-  background-image: url("Icons/Bright/Donate.png");
+  background-image: url("Icons/White/Donate.png");
   color: #fff !important;
 }
 #menu #nav_upload a {
   background-color: #eb6841;
-  background-image: url("Icons/Bright/Upload.png");
+  background-image: url("Icons/White/Upload.png");
 }
 #menu #nav_uploaded {
   flex-grow: 0;
 }
 #menu #nav_uploaded a {
   background-color: #e74b1c;
-  background-image: url("Icons/Bright/Uploads.png");
+  background-image: url("Icons/White/Uploads.png");
 }
 #menu #nav_requests {
   order: 7;
 }
 #menu #nav_requests a {
   background-color: #74b000;
-  background-image: url("Icons/Bright/Request.png");
+  background-image: url("Icons/White/Request.png");
 }
 #menu li.active a {
   border-bottom-width: 5px;
@@ -513,7 +515,7 @@ select {
   width: 100%;
 }
 #searchbars li {
-  background: no-repeat left -2px url("Icons/Dark/Search.png");
+  background: no-repeat left -2px url("Icons/Grey/Search.png");
   display: flex;
   overflow: hidden;
   padding-left: 48px;
@@ -1317,30 +1319,30 @@ form tr:not(:first-child):hover {
 #torrents #torrent_table td.category a[href$="category=9"],
 #torrents #torrent_table td.category a[href$="category=32"],
 #torrents #torrent_table td.category a[href$="category=33"] {
-  background: #cc333f url("Icons/Bright/Movie.png");
+  background: #cc333f url("Icons/White/Movie.png");
 }
 #torrents #torrent_table td.category a[href$="category=11"],
 #torrents #torrent_table td.category a[href$="category=12"],
 #torrents #torrent_table td.category a[href$="category=13"] {
-  background: #00a0b0 url("Icons/Bright/Television.png");
+  background: #00a0b0 url("Icons/White/Television.png");
 }
 #torrents #torrent_table td.category a[href$="category=22"],
 #torrents #torrent_table td.category a[href$="category=23"] {
-  background: #edc951 url("Icons/Bright/Music.png");
+  background: #edc951 url("Icons/White/Music.png");
 }
 #torrents #torrent_table td.category a[href$="category=24"],
 #torrents #torrent_table td.category a[href$="category=25"] {
-  background: #eb6841 url("Icons/Bright/Table-Lamp.png");
+  background: #eb6841 url("Icons/White/Table-Lamp.png");
 }
 #torrents #torrent_table td.category a[href$="category=26"],
 #torrents #torrent_table td.category a[href$="category=27"] {
-  background: #e9be2c url("Icons/Bright/Book.png");
+  background: #e9be2c url("Icons/White/Book.png");
 }
 #torrents #torrent_table td.category a[href$="category=28"],
 #torrents #torrent_table td.category a[href$="category=29"],
 #torrents #torrent_table td.category a[href$="category=30"],
 #torrents #torrent_table td.category a[href$="category=31"] {
-  background: #e74b1c url("Icons/Bright/Computer.png");
+  background: #e74b1c url("Icons/White/Computer.png");
 }
 #torrents #torrent_table td.category img {
   display: none;
@@ -1357,7 +1359,7 @@ form tr:not(:first-child):hover {
   display: none;
 }
 #torrents #torrent_table td.quickdownload a {
-  background: #cc333f url("Icons/Bright/Download.png") no-repeat;
+  background: #cc333f url("Icons/White/Download.png") no-repeat;
   display: block;
   height: 46px;
   position: relative;
